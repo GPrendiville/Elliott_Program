@@ -1,0 +1,27 @@
+.pdf {
+    font-size: 14px;
+}
+
+.sectionhead {
+    font-size: 14px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    /* padding: 10px; */
+}
+
+.infotable {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cmmi-10 {}
+
+.newline {}
+
+.paragraphs {}
+
+.cmbx-10 {}
