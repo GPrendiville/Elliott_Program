@@ -6,7 +6,8 @@ const toPDF = function(ev) {
     ev.preventDefault();
 
     //Basic Information
-    let name = document.getElementById('name').value;
+    let fname = document.getElementById('fname').value;
+    let lname = document.getElementById('lname').value;
     let age = document.getElementById('age').value;
     let dateofbirth = document.getElementById('dateofbirth').value;
     let reportdate = document.getElementById('reportdate').value;
