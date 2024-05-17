@@ -10,8 +10,16 @@ const toPDF = function(ev) {
     let lname = document.getElementById('lname').value;
     let age = document.getElementById('age').value;
     let dateofbirth = document.getElementById('dateofbirth').value;
-    let reportdate = document.getElementById('reportdate').value;
-    let gender = document.getElementById('gender').value;
+
+    const today = new Date();
+
+    let day = date.getDate();
+    let month = date.getMonth() + 1;
+    let year = date.getFullYear();
+
+    let reportdate = `${day}-${month}-${year}`;
+    let gender = document.getElementById('gender').value.toUpperCase();
+    let pronoun = gender === "MALE" ? "Mr." : "Ms.";
 
     //Validity Measures
     let traila = document.getElementById('traila').value;
