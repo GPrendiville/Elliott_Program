@@ -1,22 +1,32 @@
 .pdf {
-    font-size: 14px;
-    background-color: white;
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #000;
+    line-height: 1.6em;
+    margin: 0 auto;
+    word-wrap: break-word;
+    max-width: 100px;
+}
+
+h3 {
+    font-size: 8px;
+}
+
+p {
+    font-size: 8px;
+    word-wrap: break-word;
+    max-width: 10px;
 }
 
 .sectionhead {
-    font-size: 14px;
+    /* font-size: 14px; */
 }
 
-.column {
-    float: left;
-    width: 50%;
-    /* padding: 10px; */
-}
-
-.infotable {
-    content: "";
-    display: table;
-    clear: both;
+#outer {
+    padding: 72pt 72pt 72pt 72pt;
+    border: 1px solid #000;
+    margin: 25%;
+    width: 10px;
 }
 
 .cmmi-10 {}
@@ -25,4 +35,6 @@
 
 .paragraphs {}
 
-.cmbx-10 {}
+.newpage {
+    /* padding-top: 25px; */
+}
