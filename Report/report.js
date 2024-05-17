@@ -32,7 +32,7 @@ function jspdfDownload() {
             //width: 10,
             letterRendering: true,
             logging: false,
-            scale: .5
+            scale: .8
         }
         // margins: [25, 0, 25, 0],
         // width: 170,

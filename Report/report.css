@@ -3,20 +3,17 @@
     -webkit-font-smoothing: antialiased;
     color: #000;
     line-height: 1.6em;
-    margin: 0 auto;
+    margin: 0;
     word-wrap: break-word;
-    max-width: 500px;
+    max-width: 550px;
+    font-size: 12px;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 14px;
 }
 
-p {
-    /* font-size: 12px;
-    word-wrap: break-word;
-    max-width: 500px; */
-}
+p {}
 
 .sectionhead {
     /* font-size: 14px; */
@@ -25,16 +22,10 @@ p {
 #outer {
     padding: 72pt 72pt 72pt 72pt;
     border: 1px solid #000;
-    margin: 0 auto;
+    margin: 0;
     width: 900px;
 }
 
-.cmmi-10 {}
-
-.newline {}
-
-.paragraphs {}
-
-.newpage {
-    /* padding-top: 25px; */
+.paragraphs {
+    display: inline-table;
 }
