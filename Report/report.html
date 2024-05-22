@@ -36,30 +36,31 @@
         <div id="reportforpdf" class="pdf">
             <h3 class="sectionhead">Basic Information:</h3>
 
-            <p>NAME: <span>UNENTERED</span> <span>UNENTERED</span> </p>
-            <p>AGE: <span>UNENTERED</span> </p>
-            <p>DOB: <span>UNENTERED</span> </p>
-            <p>GENDER: <span>UNENTERED</span> </p>
-            <p>REPORT DATE: <span>UNENTERED</span> </p>
+            <p>NAME: <span name="fname">UNENTERED</span> <span name="lname">UNENTERED</span> </p>
+            <p>AGE: <span name="age">UNENTERED</span> </p>
+            <p>DOB: <span name="dob">UNENTERED</span> </p>
+            <p>GENDER: <span name="gender">UNENTERED</span> </p>
+            <p>REPORT DATE: <span name="reportdate">UNENTERED</span> </p>
 
             <h3 class="sectionhead">Validity Measures:</h3>
 
-            <p class="paragraphs"> Validity measures on the BNCE, TSI, and P3 suggest that <span>Mr. XXXXXX</span> understood,
-                and showed effortful responding throughout the assessment. His results on two stand
-                alone Performance Validity Tests, The B Test (Normal Effort) and Trail Making Test
-                (A: 52 seconds and B: 112 seconds), indicate credible responding. Lastly,
-                three Embedded Validity Indicators, Recognition (13) from the RAVLT, and
-                Digit Span (10) and Coding (49) from the WAIS-IV, also represent credible
-                performance.
+            <p class="paragraphs"> Validity measures on the BNCE, TSI, and P3 suggest that 
+                <span name="title">TITLE</span> <span name="lname">LAST NAME</span> understood, 
+                and showed effortful responding throughout the assessment. <span name="pronoun">PRONOUN</span> 
+                results on two stand alone Performance Validity Tests, The B Test (Normal Effort) and Trail Making Test 
+                (A: <span class="field" name="traila">TRAIL A</span> seconds and B: <span class="field" name="trailb">TRAIL B</span> seconds), 
+                indicate credible responding. Lastly, three Embedded Validity Indicators, Recognition 
+                (<span class="field" name="recognition">RECOGNITION</span>) from the RAVLT, and Digit Span (<span class="field" name="digitspan">DIGIT SPAN</span>) 
+                and Coding (<span class="field" name="coding">CODING</span>) from the WAIS-IV, also represent credible performance.
             </p>
 
-            <p class="paragraphs"> On the MMPI-3, Mr. XXXXX generated a larger than average number of
+            <!-- <p class="paragraphs"> On the MMPI-3, <span name="title">TITLE</span> <span name="lname">LAST NAME</span> generated a larger than average number of
                 infrequent responses. He also reported a larger than average number of symptoms
                 reported by individuals with genuine, severe psychopathology. He also reported a
                 larger than average number of somatic symptoms. However, it is important to note that this
                 pattern of responding may occur in individuals with substantial medical problems who report credible
                 symptoms.
-            </p>
+            </p> -->
 
             <h3 class="sectionhead">Lateralization:</h3>
 
@@ -71,28 +72,38 @@
                 relationships).
             </p>
 
+            <!-- Vocabulary -->
             <p class="paragraphs"> On the Vocabulary scale, which is a measure of Crystallized ability (left
-                hemisphere processing), Mr. XXXXX&#8217;s performance was in the 4th percentile. These
-                results indicate that his knowledge of the meaning of words is in the well below
-                average range.
+                hemisphere processing),<span name="title">TITLE</span> <span name="lname">LAST NAME</span>&#8217;s 
+                performance was in the <span class="field" name="vocab">ERROR</span>th percentile. These results indicate that his 
+                knowledge of the meaning of words is in the <span class="field" name="vocabString">ERROR</span>.
             </p>
 
-            <p class="paragraphs"> On the Abstraction scale, which is a measure of Fluid Cognitive ability and
-                requires an extra loading of verbal skills in a different context from Vocabulary, Mr.
-                XXXXX&#8217;s performance was in the 2nd percentile. These results indicate that his
-                ability to detect underlying conceptual relationships and use reasoning to identify
-                and apply rules is in the low range. Overall, Mr. XXXXX&#8217;s AQ Impairment score was
-                a 62 , which suggests a high probability of an impairment in verbal reasoning
-                ability.
+            <!-- Block Patterns -->
+            <p class="paragraphs"> On the Block Patterns scale, which is a measure of Visual Spatial 						
+                ability (right hemisphere processing), <span name="fname">&#8217;s standard score was
+                <span class="field" name="blockpatterns">ERROR</span>. This result indicates that <span name="fname">&#8217;s visual spatial reasoning, ability to  						
+                synthesize part-whole relationships, and attentiveness to visual 						
+                detail is in the <span class="field" name="blockString">ERROR</span>.
             </p>
 
-            <p class="paragraphs"> On the Block Patterns scale, which is a measure of Visual Spatial ability (right
-                hemisphere processing), Mr. XXXXX&#8217;s performance was in the 18th percentile. These
-                results indicate that his visual spatial reasoning, integration and synthesis of
-                part-whole relationships, and attentiveness to visual details is in the below average
-                range. Overall, Mr. XXXXX&#8217;s BQ Impairment score was a 96 , which is
-                within normal limits indicating average performance in visual reasoning
-                abilities.
+            <!-- Abstraction -->
+            <p class="paragraphs"> On the Abstraction scale, which is a measure of  Fluid Cognitive 						
+                processing, the ability to apply logic to learn and gather new 						
+                information for problem solving, <span name="fname">&#8217;s score was <span class="field" name="absreasoning">ERROR</span>. These results 				
+                indicate that <span name="fname">&#8217;s ability to detect underlying conceptual 
+				relationships and use reasoning to identify and apply rules is in 						
+                the <span class="field" name="absString">ERROR</span>.
+            </p>
+
+            <!-- AQ Impairment -->
+            <p class="paragraphs"> Overall, <span name="fname">&#8217;s AQ Impairment score, an overall measure of verbal 						
+                reasoning ability, was <span class="field" name="aqimpair">ERROR</span> and in the <span class="field" name="aqString">ERROR</span>.  
+            </p>
+
+            <!-- BQ Impairment -->
+            <p class="paragraphs"> Overall, <span name="fname">&#8217;s BQ Impairment score, an overall measure of visual 						
+                reasoning ability, was <span class="field" name="bqimpair">ERROR</span> and in the <span class="field" name="bqString">ERROR</span>.  
             </p>
 
             <h3 class="sectionhead"><a id="x1-4000"></a>Cognitive Functioning:</h3>
@@ -105,24 +116,80 @@
                 information processing. These tasks are followed by a set of more complex
                 tasks contained in the Part II subtests - Shifting Set, Incomplete Pictures,
                 Similarities, Attention, and Working Memory. These subtests are aimed at the
-
                 processing of novel, incomplete, and less conventional types of information -
                 the kind of processing required for the successful performance of executive
                 functions.
             </p>
 
-            <p class="paragraphs"> On the BNCE, Mr. XXXXX&#8217;s Total Score was a 26, which indicates a mild
-                cognitive impairment. More specifically, his performance was in the mild impairment
-                range on the Incomplete Pictures and Working memory subtests, and in the
-                moderate impairment range on the Similarities subtest. Difficulties on the
-                Incomplete Pictures subtest are often seen in individuals with occipital lobe
-                pathology as well as those with frontal lobe pathology. When an Individual
-                performs poorly on the Similarities subtest, it may be due to frontal lobe
-                pathology.
+            <!-- Total Score -->
+            <p class="paragraphs"> On the BNCE, <span name="title">TITLE</span> <span name="lname">LAST NAME</span>&#8217;s 
+                Total Score was a <span class="field" name="totalscore">ERROR</span>, which indicates <span class="field" name="totalScoreString">ERROR</span>.
             </p>
 
-            <p class="paragraphs"> Results of the Working Memory subtest may involve the subcortical and
-                mesencephalic structures, and the frontal lobe.
+            <!-- Orientation -->
+            <p class="paragraphs"> On the Orientation subtest, which measures orientation to time, place, and 				
+                personal information, is over-learned material that only becomes 						
+                disturbed in the case of a severe cognitive impairment, and relatively 					
+                independent from memory functioning, <span name="title">TITLE</span> <span name="lname">LAST NAME</span>&#8217;s score was <span class="field" name="orientation">ERROR</span> which 						
+                indicates <span class="field" name="orientationString">ERROR</span>.
+            </p>
+
+            <!-- Presidential -->
+            <p class="paragraphs"> On the Presidential Memory subtest, which measures common knowledge that is 			
+                usually over-learned, reliably recorded, and easy to retrieve, but can also reflect memory 	
+                problems, cultural upbringing, and/or educational experience, <span name="title">TITLE</span> <span name="lname">LAST NAME</span>&#8217;s 
+                score was <span class="field" name="presidential">ERROR</span> which indicates <span class="field" name="presidentialString">ERROR</span>.
+            </p>
+
+            <!-- Naming -->
+            <p class="paragraphs"> On the Naming subtest, a simple naming of parts of the head and hand, 					
+                <span name="title">TITLE</span> <span name="lname">LAST NAME</span>&#8217;s score was <span class="field" name="naming">ERROR</span> 
+                which indicates <span class="field" name="namingString">ERROR</span>.
+            </p>
+
+            <!-- Comprehension -->
+            <p class="paragraphs"> On the Comprehension subtest, which measures the ability to follow 					
+                simple instructions, <span name="title">TITLE</span> <span name="lname">LAST NAME</span>&#8217;s score was 
+                <span class="field" name="comprehension">ERROR</span> which indicates <span class="field" name="comprehensionString">ERROR</span>.
+            </p>
+
+            <!-- Praxis -->
+            <p class="paragraphs"> On the Constructive Praxis subtest, which measures visual motor 						
+                processing problems, <span name="title">TITLE</span> <span name="lname">LAST NAME</span>&#8217;s score was 
+                <span class="field" name="praxis">ERROR</span> which indicates <span class="field" name="praxisString">ERROR</span>.
+            </p>
+
+            <!-- Shifting Sets -->
+            <p class="paragraphs"> On the Shifting Set subtest, which focuses on the ability to change or shift from an 			
+                established pattern of responding and involves motor coordination, visual processing, 			
+                and/or visual-motor integration, but can also reflect attention, registration, and/or 			
+                working memory, <span name="title">TITLE</span> <span name="lname">LAST NAME</span>&#8217;s score was 
+                <span class="field" name="shiftingset">ERROR</span> which indicates <span class="field" name="shiftingSetString">ERROR</span>.
+            </p>
+
+            <!-- Incomplete Pics -->
+            <p class="paragraphs"> On the Incomplete Pictures subtest, which measures visual attention to detail, 
+                <span name="title">TITLE</span> <span name="lname">LAST NAME</span>&#8217;s score was 
+                <span class="field" name="incompletepics">ERROR</span> which indicates <span class="field" name="incompletePicsString">ERROR</span>.
+            </p>
+
+            <!-- Similarities -->
+            <p class="paragraphs"> On the Similarities subtest, which measures verbal reasoning or conceptual thinking,  
+                <span name="title">TITLE</span> <span name="lname">LAST NAME</span>&#8217;s score was 
+                <span class="field" name="similarities">ERROR</span> which indicates <span class="field" name="similaritiesString">ERROR</span>.
+            </p>
+
+            <!-- Attention -->
+            <p class="paragraphs"> On the Attention subtest, which measures and attention, 
+                <span name="title">TITLE</span> <span name="lname">LAST NAME</span>&#8217;s score was 
+                <span class="field" name="attention">ERROR</span> which indicates <span class="field" name="attentionString">ERROR</span>.
+            </p>
+
+            <!-- Working -->
+            <p class="paragraphs"> On the Working Memory subtest, which indicates problems with the storage or retrieval 			
+                of information in/from long term memory and the ability to hold a  problem in mental 			
+                awareness while performing an operation with it, <span name="title">TITLE</span> <span name="lname">LAST NAME</span>&#8217;s score was 
+                <span class="field" name="memory">ERROR</span> which indicates <span class="field" name="memoryString">ERROR</span>.
             </p>
 
             <p class="paragraphs"> Mr. XXXXX&#8217;s attention, concentration, and memory were assessed on the

@@ -18,7 +18,8 @@ const toPDF = function(ev) {
     let year = date.getFullYear();
 
     let reportdate = `${day}-${month}-${year}`;
-    let pronoun = document.getElementById('gender').value.toUpperCase() === "MALE" ? "Mr." : "Ms.";
+    let title = document.getElementById('gender').value.toUpperCase() === "MALE" ? "Mr." : "Ms.";
+    let pronoun = document.getElementById('gender').value.toUpperCase() === "MALE" ? "his" : "her";
 
     //Validity Measures - Waiting on meeting with Dr. Elliott
     let traila = document.getElementById('traila').value;
