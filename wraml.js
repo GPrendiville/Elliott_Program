@@ -1,5 +1,5 @@
 
-export function fingersString(fingers) {
+export function fingersToString(fingers) {
     switch (!isNaN(fingers)) {
         case fingers < 2:
             return "extremely low range";
@@ -16,7 +16,7 @@ export function fingersString(fingers) {
     }
 }
 
-export function scaledFingersString(fingers) {
+export function scaledFingersToString(fingers) {
     switch (!isNaN(fingers)) {
         case fingers === 4:
             return "4, which is the 2nd%, indicating a very poor performance";
@@ -48,65 +48,86 @@ export function scaledFingersString(fingers) {
     }
 }
 
-export function trialScoreString(trialscore) {
-    switch(!isNaN(trialscore)) {
-        case trialscore < 5:
+export function wramlToString(percent) {
+    switch(!isNaN(percent)) {
+        case percent < 5:
             return "very poor performance";
-        case trialscore < 10:
+        case percent < 10:
             return "poor performance";
-        case trialscore < 17:
+        case percent < 17:
             return "below average performance";
-        case trialscore < 26:
+        case percent < 26:
             return "poor low average performance";
-        case trialscore < 70:
+        case percent < 70:
             return "average performance";
-        case trialscore < 85:
+        case percent < 85:
             return "strong performance";
-        case trialscore < 90:
+        case percent < 90:
             return "very strong performance";
         default:
             return "excellent performance";
     }
 }
 
-export function recallString(recall) {
-    switch(!isNaN(recall)) {
-        case recall < 5:
-            return "very poor performance";
-        case recall < 10:
-            return "poor performance";
-        case recall < 17:
-            return "below average performance";
-        case recall < 26:
-            return "poor low average performance";
-        case recall < 70:
-            return "average performance";
-        case recall < 85:
-            return "strong performance";
-        case recall < 90:
-            return "very strong performance";
-        default:
-            return "excellent performance";
-    }
-}
+// export function trialScoreString(trialscore) {
+//     switch(!isNaN(trialscore)) {
+//         case trialscore < 5:
+//             return "very poor performance";
+//         case trialscore < 10:
+//             return "poor performance";
+//         case trialscore < 17:
+//             return "below average performance";
+//         case trialscore < 26:
+//             return "poor low average performance";
+//         case trialscore < 70:
+//             return "average performance";
+//         case trialscore < 85:
+//             return "strong performance";
+//         case trialscore < 90:
+//             return "very strong performance";
+//         default:
+//             return "excellent performance";
+//     }
+// }
 
-export function recognitionString(recognition) {
-    switch(!isNaN(recognition)) {
-        case recognition < 5:
-            return "very poor performance";
-        case recognition < 10:
-            return "poor performance";
-        case recognition < 17:
-            return "below average performance";
-        case recognition < 26:
-            return "poor low average performance";
-        case recognition < 70:
-            return "average performance";
-        case recognition < 85:
-            return "strong performance";
-        case recognition < 90:
-            return "very strong performance";
-        default:
-            return "excellent performance";
-    }
-}
+// export function recallString(recall) {
+//     switch(!isNaN(recall)) {
+//         case recall < 5:
+//             return "very poor performance";
+//         case recall < 10:
+//             return "poor performance";
+//         case recall < 17:
+//             return "below average performance";
+//         case recall < 26:
+//             return "poor low average performance";
+//         case recall < 70:
+//             return "average performance";
+//         case recall < 85:
+//             return "strong performance";
+//         case recall < 90:
+//             return "very strong performance";
+//         default:
+//             return "excellent performance";
+//     }
+// }
+
+// export function recognitionString(recognition) {
+//     switch(!isNaN(recognition)) {
+//         case recognition < 5:
+//             return "very poor performance";
+//         case recognition < 10:
+//             return "poor performance";
+//         case recognition < 17:
+//             return "below average performance";
+//         case recognition < 26:
+//             return "poor low average performance";
+//         case recognition < 70:
+//             return "average performance";
+//         case recognition < 85:
+//             return "strong performance";
+//         case recognition < 90:
+//             return "very strong performance";
+//         default:
+//             return "excellent performance";
+//     }
+// }
