@@ -126,11 +126,9 @@
     <input type="checkbox" id="pts" name="diagnoses" value="Post-Traumatic Stress">
     <label for="pts">Post-Traumatic Stress</label><br>
 
-    <button id="topdf">Submit</button>
-    <script type="module">
-        import { toPDF } from './userInput.js';
-        document.querySelector('button').addEventListener('click', function () { toPDF() });
-    </script>
+    <button id="topdf" onclick="toPDF()">Submit</button>
+
+    <script type="text/javascript" src="./userInput.js"></script>
 </form>
 
 </body>

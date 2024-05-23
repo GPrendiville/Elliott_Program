@@ -3,12 +3,9 @@
 // import { totalScoreString, subsetScoreToString } from "../cognitiveFunctioning";
 // import { dkefsToString } from "../dkefs";
 // import { wramlToString, fingersToString, scaledFingersToString } from "../wraml";
-import {fname, lname, dateofbirth} from './userInput.js';
+//import {fname, lname, dateofbirth} from './userInput.js';
 
 export function jspdfDownload() {
-    let firstName = sessionStorage.getItem("fname");
-    console.log(firstName)
-    fnameOnLoad();
     //window.html2canvas = html2canvas;
     window.jsPDF = window.jspdf.jsPDF;
     const doc = new jsPDF('p', 'pt', 'letter');

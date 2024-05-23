@@ -1,70 +1,67 @@
 
-var fname;
-var lname;
-var age;
-var dateofbirth;
-var reportdate;
-var title;
-var pronoun;
-var traila;
-var trailb;
-var recognition;
-var digitspan;
-var coding;
-var crin;
-var wrin;
-var trin;
-var f;
-var fp;
-var fs;
-var fbs;
-var rbs;
-var l;
-var k;
-var vocab;
-var blockpatterns;
-var absreasoning;
-var aqimpair;
-var bqimpair;
-var totalscore;
-var orientationSubtest;
-var presidentialSubtest;
-var namingSubtest;
-var comprehensionSubtest;
-var praxisSubtest;
-var shifitingsetSubtest;
-var incompletepicsSubtest;
-var similaritiesSubtest;
-var attentionSubtest;
-var memorySubtest;
-var fingers;
-var trialscore;
-var recall;
-var deviations;
-var letterfluency;
-var categoryfluency;
-var categoryswitching;
-var colornaming;
-var wordreading;
-var inhibition;
-var inhibswitch;
-var motorcoord;
-var diagnoses = [];
+// var fname;
+// var lname;
+// var age;
+// var dateofbirth;
+// var reportdate;
+// var title;
+// var pronoun;
+// var traila;
+// var trailb;
+// var recognition;
+// var digitspan;
+// var coding;
+// var crin;
+// var wrin;
+// var trin;
+// var f;
+// var fp;
+// var fs;
+// var fbs;
+// var rbs;
+// var l;
+// var k;
+// var vocab;
+// var blockpatterns;
+// var absreasoning;
+// var aqimpair;
+// var bqimpair;
+// var totalscore;
+// var orientationSubtest;
+// var presidentialSubtest;
+// var namingSubtest;
+// var comprehensionSubtest;
+// var praxisSubtest;
+// var shifitingsetSubtest;
+// var incompletepicsSubtest;
+// var similaritiesSubtest;
+// var attentionSubtest;
+// var memorySubtest;
+// var fingers;
+// var trialscore;
+// var recall;
+// var deviations;
+// var letterfluency;
+// var categoryfluency;
+// var categoryswitching;
+// var colornaming;
+// var wordreading;
+// var inhibition;
+// var inhibswitch;
+// var motorcoord;
+// var diagnoses = [];
 
-// const init = function(){
-     
-// }
-
-export function toPDF() {
-    console.log("Entered function.");
-    // ev.preventDefault();
+function toPDF() {
 
     // Basic Information
-    fname = document.getElementById('fname').value;
-    sessionStorage.setItem("fname", document.getElementById('fname').value)
-    lname = document.getElementById('lname').value;
-    age = document.getElementById('age').value;
-    dateofbirth = document.getElementById('dateofbirth').value;
+    //fname = document.getElementById('fname').value;
+    sessionStorage.setItem("fname", document.getElementById('fname').value);
+    //lname = document.getElementById('lname').value;
+    sessionStorage.setItem("lname", document.getElementById('lname').value);
+    //age = document.getElementById('age').value;
+    sessionStorage.setItem("age", document.getElementById('age').value);
+    //dateofbirth = document.getElementById('dateofbirth').value;
+    sessionStorage.setItem("dateofbirth", document.getElementById('dateofbirth').value);
 
     let today = new Date();
 
@@ -73,86 +70,122 @@ export function toPDF() {
     let year = today.getFullYear();
 
     reportdate = `${day}-${month}-${year}`;
+    sessionStorage.setItem("dateofbirth", `${day}-${month}-${year}`);
     title = document.getElementById('gender').value.toUpperCase() === "MALE" ? "Mr." : "Ms.";
+    sessionStorage.setItem("gender", title);
     pronoun = document.getElementById('gender').value.toUpperCase() === "MALE" ? "his" : "her";
+    sessionStorage.setItem("pronoun", pronoun);
 
     //Validity Measures - Waiting on meeting with Dr. Elliott
-    traila = document.getElementById('traila').value;
-    trailb = document.getElementById('trailb').value;
-    recognition = document.getElementById('recognition').value;
-    digitspan = document.getElementById('digitspan').value;
-    coding = document.getElementById('coding').value;
-    crin = document.getElementById('crin').value;
-    wrin = document.getElementById('wrin').value;
-    trin = document.getElementById('trin').value;
-    f = document.getElementById('f').value;
-    fp = document.getElementById('fp').value;
-    fs = document.getElementById('fs').value;
-    fbs = document.getElementById('fbs').value;
-    rbs = document.getElementById('rbs').value;
-    l = document.getElementById('l').value;
-    k = document.getElementById('k').value;
+    // traila = document.getElementById('traila').value;
+    sessionStorage.setItem("traila", document.getElementById('traila').value);
+    // trailb = document.getElementById('trailb').value;
+    sessionStorage.setItem("trailb", document.getElementById('trailb').value);
+    // recognition = document.getElementById('recognition').value;
+    sessionStorage.setItem("recognition", document.getElementById('recognition').value);
+    // digitspan = document.getElementById('digitspan').value;
+    sessionStorage.setItem("digitspan", document.getElementById('digitspan').value);
+    // coding = document.getElementById('coding').value;
+    sessionStorage.setItem("coding", document.getElementById('coding').value);
+    // crin = document.getElementById('crin').value;
+    sessionStorage.setItem("crin", document.getElementById('crin').value);
+    // wrin = document.getElementById('wrin').value;
+    sessionStorage.setItem("wrin", document.getElementById('wrin').value);
+    // trin = document.getElementById('trin').value;
+    sessionStorage.setItem("trin", document.getElementById('trin').value);
+    // f = document.getElementById('f').value;
+    sessionStorage.setItem("f", document.getElementById('f').value);
+    // fp = document.getElementById('fp').value;
+    sessionStorage.setItem("fp", document.getElementById('fp').value);
+    // fs = document.getElementById('fs').value;
+    sessionStorage.setItem("fs", document.getElementById('fs').value);
+    // fbs = document.getElementById('fbs').value;
+    sessionStorage.setItem("fbs", document.getElementById('fbs').value);
+    // rbs = document.getElementById('rbs').value;
+    sessionStorage.setItem("rbs", document.getElementById('rbs').value);
+    // l = document.getElementById('l').value;
+    sessionStorage.setItem("l", document.getElementById('l').value);
+    // k = document.getElementById('k').value;
+    sessionStorage.setItem("k", document.getElementById('k').value);
 
     //Lateralization
-    vocab = document.getElementById('vocab').value;
-    blockpatterns = document.getElementById('blockpatterns').value;
-    absreasoning = document.getElementById('absreasoning').value;
-    aqimpair = document.getElementById('aqimpair').value;
-    bqimpair = document.getElementById('bqimpair').value;
+    // vocab = document.getElementById('vocab').value;
+    sessionStorage.setItem("vocab", document.getElementById('vocab').value);
+    // blockpatterns = document.getElementById('blockpatterns').value;
+    sessionStorage.setItem("blockpatterns", document.getElementById('blockpatterns').value);
+    // absreasoning = document.getElementById('absreasoning').value;
+    sessionStorage.setItem("absreasoning", document.getElementById('absreasoning').value);
+    // aqimpair = document.getElementById('aqimpair').value;
+    sessionStorage.setItem("aqimpair", document.getElementById('aqimpair').value);
+    // bqimpair = document.getElementById('bqimpair').value;
+    sessionStorage.setItem("bqimpair", document.getElementById('bqimpair').value);
 
     //Cognitive Functioning
-    totalscore = document.getElementById('totalscore').value;
-    orientationSubtest = document.getElementById('orientation').value;
-    presidentialSubtest = document.getElementById('presidential').value;
-    namingSubtest = document.getElementById('naming').value;
-    comprehensionSubtest = document.getElementById('comprehension').value;
-    praxisSubtest = document.getElementById('praxis').value;
+    // totalscore = document.getElementById('totalscore').value;
+    sessionStorage.setItem("totalscore", document.getElementById('totalscore').value);
+    // orientationSubtest = document.getElementById('orientation').value;
+    sessionStorage.setItem("orientation", document.getElementById('orientation').value);
+    // presidentialSubtest = document.getElementById('presidential').value;
+    sessionStorage.setItem("presidential", document.getElementById('presidential').value);
+    // namingSubtest = document.getElementById('naming').value;
+    sessionStorage.setItem("naming", document.getElementById('naming').value);
+    // comprehensionSubtest = document.getElementById('comprehension').value;
+    sessionStorage.setItem("comprehension", document.getElementById('comprehension').value);
+    // praxisSubtest = document.getElementById('praxis').value;
+    sessionStorage.setItem("praxis", document.getElementById('praxis').value);
     // shifitingsetSubtest = document.getElementById('shifitingset').value;
-    incompletepicsSubtest = document.getElementById('incompletepics').value;
-    similaritiesSubtest = document.getElementById('similarities').value;
-    attentionSubtest = document.getElementById('attention').value;
-    memorySubtest = document.getElementById('memory').value;
+    sessionStorage.setItem("shiftingset", document.getElementById('shiftingset').value);
+    // incompletepicsSubtest = document.getElementById('incompletepics').value;
+    sessionStorage.setItem("incompletepics", document.getElementById('incompletepics').value);
+    // similaritiesSubtest = document.getElementById('similarities').value;
+    sessionStorage.setItem("similarities", document.getElementById('similarities').value);
+    // attentionSubtest = document.getElementById('attention').value;
+    sessionStorage.setItem("attention", document.getElementById('attention').value);
+    // memorySubtest = document.getElementById('memory').value;
+    sessionStorage.setItem("memory", document.getElementById('memory').value);
 
     //WRAML
-    fingers = document.getElementById('fingers').value;
-    trialscore = document.getElementById('trialscore').value;
-    recall = document.getElementById('recall').value;
+    // fingers = document.getElementById('fingers').value;
+    sessionStorage.setItem("fingers", document.getElementById('fingers').value);
+    // trialscore = document.getElementById('trialscore').value;
+    sessionStorage.setItem("trialscore", document.getElementById('trialscore').value);
+    // recall = document.getElementById('recall').value;
+    sessionStorage.setItem("recall", document.getElementById('recall').value);
     //recognition used here as well
 
     //SDMT
-    deviations = document.getElementById('deviations').value;
+    // deviations = document.getElementById('deviations').value;
+    sessionStorage.setItem("deviations", document.getElementById('deviations').value);
 
     //D-KEFS
-    letterfluency = document.getElementById('letterfluency').value;
-    categoryfluency = document.getElementById('categoryfluency').value;
-    categoryswitching = document.getElementById('categoryswitching').value;
-    colornaming = document.getElementById('colornaming').value;
-    wordreading = document.getElementById('wordreading').value;
-    inhibition = document.getElementById('inhibition').value;
-    inhibswitch = document.getElementById('inhib-switch').value;
+    // letterfluency = document.getElementById('letterfluency').value;
+    sessionStorage.setItem("letterfluency", document.getElementById('letterfluency').value);
+    // categoryfluency = document.getElementById('categoryfluency').value;
+    sessionStorage.setItem("categoryfluency", document.getElementById('categoryfluency').value);
+    // categoryswitching = document.getElementById('categoryswitching').value;
+    sessionStorage.setItem("categoryswitching", document.getElementById('categoryswitching').value);
+    // colornaming = document.getElementById('colornaming').value;
+    sessionStorage.setItem("colornaming", document.getElementById('colornaming').value);
+    // wordreading = document.getElementById('wordreading').value;
+    sessionStorage.setItem("wordreading", document.getElementById('wordreading').value);
+    // inhibition = document.getElementById('inhibition').value;
+    sessionStorage.setItem("inhibition", document.getElementById('inhibition').value);
+    // inhibswitch = document.getElementById('inhib-switch').value;
+    sessionStorage.setItem("inhib-switch", document.getElementById('inhib-switch').value);
 
     //Beery VMI
-    motorcoord = document.getElementById('motorcoord').value;
+    // motorcoord = document.getElementById('motorcoord').value;
+    sessionStorage.setItem("motorcoord", document.getElementById('motorcoord').value);
 
     //Diagnoses
     let checkboxes = document.getElementsByName('diagnoses').value;
+    let diagnoses = []
     for (let condition in checkboxes) {
         if (condition.checked) {
             diagnoses.push(condition.value);
         }
     }
-
-    console.log(fname);
-    console.log(age);
-    console.log(dateofbirth)
-    window.location="report.html"
-}
-
-export { fname, lname, age, dateofbirth, reportdate, title, pronoun, traila, trailb, recognition, digitspan, coding, crin, wrin, trin, 
-    f, fp, fs, fbs, rbs, l, k, vocab, blockpatterns, absreasoning, aqimpair, bqimpair, totalscore, orientationSubtest, 
-    presidentialSubtest, namingSubtest, comprehensionSubtest, praxisSubtest, shifitingsetSubtest, incompletepicsSubtest, similaritiesSubtest, 
-    attentionSubtest, memorySubtest, fingers, trialscore, recall, deviations, letterfluency, categoryfluency, categoryswitching, colornaming,
-    wordreading, inhibition, inhibswitch, motorcoord //diagnoses
+    sessionStorage.setItem("diagnoses", diagnoses);
 }
 
 // document.addEventListener('DOMContentLoaded', init);
