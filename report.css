@@ -1,0 +1,180 @@
+.pdf {
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #000;
+    line-height: 1.6em;
+    margin: 0;
+    word-wrap: break-word;
+    max-width: 550px;
+    font-size: 12px;
+}
+
+h3 {
+    font-size: 12px;
+}
+
+p {}
+
+.sectionhead {
+    /* font-size: 14px; */
+}
+
+#outer {
+    padding: 72pt 72pt 72pt 72pt;
+    border: 1px solid #000;
+    margin: 0;
+    width: 900px;
+}
+
+.paragraphs {
+    display: inline-table;
+}
+
+.field {
+    font-weight: bold;
+}
+
+.btn {
+}
+.pdf {
+}
+
+.fname {
+}
+.lname {
+}
+.age {
+}
+.dob {
+}
+.gender {
+}
+.reportdate {
+}
+.paragraphs {
+}
+.title {
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.pronoun {
+}
+.field {
+}
+.traila {
+}
+.trailb {
+}
+.recognition {
+}
+.digitspan {
+}
+.coding {
+}
+.vocab {
+}
+.vocabString {
+}
+.blockpatterns {
+}
+.blockString {
+}
+.absreasoning {
+}
+.absString {
+}
+.aqimpair {
+}
+.aqString {
+}
+.bqimpair {
+}
+.bqString {
+}
+.totalscore {
+}
+.totalScoreString {
+}
+.orientation {
+}
+.orientationString {
+}
+.presidential {
+}
+.presidentialString {
+}
+.naming {
+}
+.namingString {
+}
+.comprehension {
+}
+.comprehensionString {
+}
+.praxis {
+}
+.praxisString {
+}
+.shiftingset {
+}
+.shiftingSetString {
+}
+.incompletepics {
+}
+.incompletePicsString {
+}
+.similarities {
+}
+.similaritiesString {
+}
+.attention {
+}
+.attentionString {
+}
+.memory {
+}
+.memoryString {
+}
+.fingers {
+}
+.fingersString {
+}
+.recall {
+}
+.deviationsString {
+}
+.letterfluency {
+}
+.letterFluencyString {
+}
+.categoryfluency {
+}
+.categoryFluencyString {
+}
+.categoryswitching {
+}
+.categorySwitchingString {
+}
+.colornaming {
+}
+.colorNamingString {
+}
+.wordreading {
+}
+.wordReadingString {
+}
+.inhibition {
+}
+.inhibitionString {
+}
+.inhibswitch {
+}
+.switchString {
+}
+.motorcoord {
+}
+.motorCoordString {
+}
+
+

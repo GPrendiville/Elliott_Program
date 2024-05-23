@@ -1,20 +1,14 @@
+// import { lateralizationToString } from "../lateralization";
+// import { motorCoordString } from "../beeryVMI";
+// import { totalScoreString, subsetScoreToString } from "../cognitiveFunctioning";
+// import { dkefsToString } from "../dkefs";
+// import { wramlToString, fingersToString, scaledFingersToString } from "../wraml";
+import {fname, lname, dateofbirth} from './userInput.js';
 
-
-function download() {
-    var element = document.getElementById('reportforpdf');
-    var opt = {
-        filename: 'test.pdf',
-        margin: [20, 0, 30, 0],
-        //pagebreak: { mode: 'css' },
-        html2canvas: { backgroundColor: null},
-        jsPDF: {
-            unit: 'mm'
-        }
-    }
-    html2pdf().set(opt).from(element).save();
-}
-
-function jspdfDownload() {
+export function jspdfDownload() {
+    let firstName = sessionStorage.getItem("fname");
+    console.log(firstName)
+    fnameOnLoad();
     //window.html2canvas = html2canvas;
     window.jsPDF = window.jspdf.jsPDF;
     const doc = new jsPDF('p', 'pt', 'letter');
@@ -44,4 +38,12 @@ function jspdfDownload() {
         // autopaging: 'text'
     }
     doc.html(forpdf, opt)
+}
+
+export function fnameOnLoad() {
+    console.log(sessionStorage.getItem("fname"));
+    var fnameElements = document.getElementsByClassName('fname');
+    for (let i=0; i<fnameElements.length; i++) {
+        fnameElements[i].innerText = sessionStorage.getItem("fname")
+    }
 }
