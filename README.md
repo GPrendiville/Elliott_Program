@@ -15,3 +15,5 @@ Will input be a specific number or range? What should input of 5 correlate to, a
 6. Diagnoses
 Are the options of assessment important? What is TSI Check?
 
+How should inputs be grouped on entry?
+

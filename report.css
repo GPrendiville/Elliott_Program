@@ -54,7 +54,7 @@ p {}
     font-style: italic;
 }
 
-.capitalize {
+#capitalize {
     text-transform: capitalize;
 }
 .pronoun {

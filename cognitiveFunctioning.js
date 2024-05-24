@@ -31,31 +31,31 @@ export function cogFunctionOnLoad() {
     document.getElementsByClassName('totalScoreString')[0].innerText = totalScoreString(sessionStorage.getItem("totalscore"));
 
     document.getElementsByClassName('orientation')[0].innerText = sessionStorage.getItem("orientation");
-    document.getElementsByClassName('orientationString')[0].innerText = subsetScoreToString(sessionStorage.getItem("orientation"));
+    document.getElementsByClassName('orientationString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("orientation")));
 
     document.getElementsByClassName('presidential')[0].innerText = sessionStorage.getItem("presidential");
-    document.getElementsByClassName('presidentialString')[0].innerText = subsetScoreToString(sessionStorage.getItem("presidential"));
+    document.getElementsByClassName('presidentialString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("presidential")));
 
     document.getElementsByClassName('naming')[0].innerText = sessionStorage.getItem("naming");
-    document.getElementsByClassName('namingString')[0].innerText = subsetScoreToString(sessionStorage.getItem("namingString"));
+    document.getElementsByClassName('namingString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("namingString")));
 
     document.getElementsByClassName('comprehension')[0].innerText = sessionStorage.getItem("comprehension");
-    document.getElementsByClassName('comprehensionString')[0].innerText = subsetScoreToString(sessionStorage.getItem("comprehension"));
+    document.getElementsByClassName('comprehensionString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("comprehension")));
 
     document.getElementsByClassName('praxis')[0].innerText = sessionStorage.getItem("praxis");
-    document.getElementsByClassName('praxisString')[0].innerText = subsetScoreToString(sessionStorage.getItem("praxis"));
+    document.getElementsByClassName('praxisString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("praxis")));
 
     document.getElementsByClassName('shiftingset')[0].innerText = sessionStorage.getItem("shiftingset");
-    document.getElementsByClassName('shiftingSetString')[0].innerText = subsetScoreToString(sessionStorage.getItem("shiftingset"));
+    document.getElementsByClassName('shiftingSetString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("shiftingset")));
 
     document.getElementsByClassName('incompletepics')[0].innerText = sessionStorage.getItem("incompletepics");
-    document.getElementsByClassName('incompletePicsString')[0].innerText = subsetScoreToString(sessionStorage.getItem("incompletepics"));
+    document.getElementsByClassName('incompletePicsString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("incompletepics")));
 
     document.getElementsByClassName('similarities')[0].innerText = sessionStorage.getItem("similarities");
-    document.getElementsByClassName('similaritiesString')[0].innerText = subsetScoreToString(sessionStorage.getItem("similarities"));
+    document.getElementsByClassName('similaritiesString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("similarities")));
 
     document.getElementsByClassName('memory')[0].innerText = sessionStorage.getItem("memory");
-    document.getElementsByClassName('memoryString')[0].innerText = subsetScoreToString(sessionStorage.getItem("memory"));
+    document.getElementsByClassName('memoryString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("memory")));
 
 }
 

@@ -80,7 +80,7 @@ export function wramlOnLoad() {
     document.getElementsByClassName('recall')[0].innerText = sessionStorage.getItem("recall");
     document.getElementsByClassName('recallString')[0].innerText = wramlToString(sessionStorage.getItem("recall"));
 
-    document.getElementsByClassName('recognitionString')[0].innerText = fingersToString(sessionStorage.getItem("recognition"));
+    document.getElementsByClassName('recognitionString')[0].innerText = wramlToString(sessionStorage.getItem("recognition"));
 
 }
 
