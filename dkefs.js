@@ -1,4 +1,4 @@
-export function dkefsToString(percent) {
+function dkefsToString(percent) {
     switch(!isNaN(percent)) {
         case percent < 5:
             return "very poor performance";
@@ -17,6 +17,30 @@ export function dkefsToString(percent) {
         default:
             return "excellent performance";
     }
+}
+
+export function dkefsOnLoad() {
+
+    document.getElementsByClassName('letterfluency')[0].innerText = sessionStorage.getItem("letterfluency");
+    document.getElementsByClassName('letterFluencyString')[0].innerText = dkefsToString(sessionStorage.getItem("letterfluency"));
+
+    document.getElementsByClassName('categoryfluency')[0].innerText = sessionStorage.getItem("categoryfluency");
+    document.getElementsByClassName('categoryFluencyString')[0].innerText = dkefsToString(sessionStorage.getItem("categoryfluency"));
+
+    document.getElementsByClassName('categoryswitching')[0].innerText = sessionStorage.getItem("categoryswitching");
+    document.getElementsByClassName('categorySwitchingString')[0].innerText = dkefsToString(sessionStorage.getItem("categoryswitching"));
+
+    document.getElementsByClassName('colornaming')[0].innerText = sessionStorage.getItem("colornaming");
+    document.getElementsByClassName('colorNamingString')[0].innerText = dkefsToString(sessionStorage.getItem("colornaming"));
+
+    document.getElementsByClassName('wordreading')[0].innerText = sessionStorage.getItem("wordreading");
+    document.getElementsByClassName('wordReadingString')[0].innerText = dkefsToString(sessionStorage.getItem("wordreading"));
+
+    document.getElementsByClassName('inhibition')[0].innerText = sessionStorage.getItem("inhibition");
+    document.getElementsByClassName('inhibitionString')[0].innerText = dkefsToString(sessionStorage.getItem("inhibition"));
+
+    document.getElementsByClassName('inhibswitch')[0].innerText = sessionStorage.getItem("inhibswitch");
+    document.getElementsByClassName('switchString')[0].innerText = dkefsToString(sessionStorage.getItem("inhibswitch"));
 }
 
 // export function letterFluencyString(letterfluency) {

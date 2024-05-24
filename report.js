@@ -1,9 +1,13 @@
-// import { lateralizationToString } from "../lateralization";
+
 // import { motorCoordString } from "../beeryVMI";
-// import { totalScoreString, subsetScoreToString } from "../cognitiveFunctioning";
 // import { dkefsToString } from "../dkefs";
 // import { wramlToString, fingersToString, scaledFingersToString } from "../wraml";
-//import {fname, lname, dateofbirth} from './userInput.js';
+
+import { lateralizationOnLoad } from "./lateralization.js";
+import { cogFunctionOnLoad } from "./cognitiveFunctioning.js";
+import { beeryOnLoad } from "./beeryVMI.js";
+import { dkefsOnLoad } from "./dkefs.js";
+import { wramlOnLoad } from "./wraml.js";
 
 export function jspdfDownload() {
     //window.html2canvas = html2canvas;
@@ -35,12 +39,53 @@ export function jspdfDownload() {
         // autopaging: 'text'
     }
     doc.html(forpdf, opt)
+
+    sessionStorage.clear();
 }
 
-export function fnameOnLoad() {
-    console.log(sessionStorage.getItem("fname"));
-    var fnameElements = document.getElementsByClassName('fname');
-    for (let i=0; i<fnameElements.length; i++) {
-        fnameElements[i].innerText = sessionStorage.getItem("fname")
-    }
+export function replaceOnLoad() {
+
+    basicInformation();
+    lateralizationOnLoad();
+    cogFunctionOnLoad();
+    wramlOnLoad();
+    dkefsOnLoad();
+    beeryOnLoad();
+}
+
+function basicInformation() {
+
+    document.querySelectorAll(".fname").forEach(element => element.innerText = sessionStorage.getItem("fname"));
+
+    // var fnameElements = document.getElementsByClassName('fname');
+    // console.log(fnameElements.length)
+    // for (let i=0; i< fnameElements.length; i++) {
+    //     fnameElements[i].innerText = sessionStorage.getItem("fname");
+    // }
+
+    document.querySelectorAll(".lname").forEach(element => element.innerText = sessionStorage.getItem("lname"));
+
+    // var lnameElements = document.getElementsByClassName('lname');
+    // console.log(lnameElements.length)
+    // for (let i=0; i< fnameElements.length; i++) {
+    //     lnameElements[i].innerText = sessionStorage.getItem("lname");
+    // }
+
+    document.getElementsByClassName('dob')[0].innerText = sessionStorage.getItem("dateofbirth");
+
+    document.getElementsByClassName('age')[0].innerText = sessionStorage.getItem("age");
+
+    document.getElementsByClassName('reportdate')[0].innerText = sessionStorage.getItem("reportdate");
+
+    document.getElementsByClassName('gender')[0].innerText = sessionStorage.getItem("gender");
+
+    document.querySelectorAll(".title").forEach(element => element.innerText = sessionStorage.getItem("title"));
+
+    // var titleElements = document.getElementsByClassName('title');
+    // for (let i=0; i< fnameElements.length; i++) {
+    //     titleElements[i].innerText = sessionStorage.getItem("title");
+    // }
+
+    document.querySelectorAll(".pronoun").forEach(element => element.innerText = sessionStorage.getItem("pronoun"));
+    
 }

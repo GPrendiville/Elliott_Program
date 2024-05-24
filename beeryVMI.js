@@ -1,5 +1,5 @@
 
-export function motorCoordString(motorcoord) {
+function motorCoordToString(motorcoord) {
     switch(!isNaN(motorcoord)) {
         case motorcoord < 5:
             return "very poor performance";
@@ -18,4 +18,11 @@ export function motorCoordString(motorcoord) {
         default:
             return "excellent performance";
     }
+}
+
+export function beeryOnLoad() {
+
+    document.getElementsByClassName('motorcoord')[0].innerText = sessionStorage.getItem("motorcoord");
+    document.getElementsByClassName('motorCoordString')[0].innerText = motorCoordToString(sessionStorage.getItem("motorcoord"));
+
 }

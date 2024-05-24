@@ -70,11 +70,12 @@ function toPDF() {
     let year = today.getFullYear();
 
     reportdate = `${day}-${month}-${year}`;
-    sessionStorage.setItem("dateofbirth", `${day}-${month}-${year}`);
+    sessionStorage.setItem("reportdate", `${year}-${day}-${month}`);
     title = document.getElementById('gender').value.toUpperCase() === "MALE" ? "Mr." : "Ms.";
-    sessionStorage.setItem("gender", title);
+    sessionStorage.setItem("title", title);
     pronoun = document.getElementById('gender').value.toUpperCase() === "MALE" ? "his" : "her";
     sessionStorage.setItem("pronoun", pronoun);
+    sessionStorage.setItem("gender", document.getElementById('gender').value.toUpperCase());
 
     //Validity Measures - Waiting on meeting with Dr. Elliott
     // traila = document.getElementById('traila').value;
@@ -171,7 +172,7 @@ function toPDF() {
     // inhibition = document.getElementById('inhibition').value;
     sessionStorage.setItem("inhibition", document.getElementById('inhibition').value);
     // inhibswitch = document.getElementById('inhib-switch').value;
-    sessionStorage.setItem("inhib-switch", document.getElementById('inhib-switch').value);
+    sessionStorage.setItem("inhibswitch", document.getElementById('inhibswitch').value);
 
     //Beery VMI
     // motorcoord = document.getElementById('motorcoord').value;

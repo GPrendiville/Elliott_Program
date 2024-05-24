@@ -1,5 +1,5 @@
 
-export function fingersToString(fingers) {
+function fingersToString(fingers) {
     switch (!isNaN(fingers)) {
         case fingers < 2:
             return "extremely low range";
@@ -16,7 +16,7 @@ export function fingersToString(fingers) {
     }
 }
 
-export function scaledFingersToString(fingers) {
+function scaledFingersToString(fingers) {
     switch (!isNaN(fingers)) {
         case fingers === 4:
             return "4, which is the 2nd%, indicating a very poor performance";
@@ -48,7 +48,7 @@ export function scaledFingersToString(fingers) {
     }
 }
 
-export function wramlToString(percent) {
+function wramlToString(percent) {
     switch(!isNaN(percent)) {
         case percent < 5:
             return "very poor performance";
@@ -67,6 +67,21 @@ export function wramlToString(percent) {
         default:
             return "excellent performance";
     }
+}
+
+export function wramlOnLoad() {
+
+    document.getElementsByClassName('fingers')[0].innerText = sessionStorage.getItem("fingers");
+    document.getElementsByClassName('fingersString')[0].innerText = fingersToString(sessionStorage.getItem("fingers"));
+
+    document.getElementsByClassName('trialscore')[0].innerText = sessionStorage.getItem("trialscore");
+    document.getElementsByClassName('trialString')[0].innerText = wramlToString(sessionStorage.getItem("trialscore"));
+
+    document.getElementsByClassName('recall')[0].innerText = sessionStorage.getItem("recall");
+    document.getElementsByClassName('recallString')[0].innerText = wramlToString(sessionStorage.getItem("recall"));
+
+    document.getElementsByClassName('recognitionString')[0].innerText = fingersToString(sessionStorage.getItem("recognition"));
+
 }
 
 // export function trialScoreString(trialscore) {

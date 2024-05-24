@@ -10,7 +10,7 @@
 }
 
 h3 {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 p {}
@@ -30,151 +30,206 @@ p {}
     display: inline-table;
 }
 
-.field {
-    font-weight: bold;
-}
-
 .btn {
 }
 .pdf {
 }
 
-.fname {
+.trialscore {
+    font-weight: bold;
 }
-.lname {
+.trialString {
+    font-style: italic;
 }
-.age {
+.recall {
+    font-weight: bold;
 }
-.dob {
+.recallString {
+    font-style: italic;
 }
-.gender {
+.recognition {
+    font-weight: bold;
 }
-.reportdate {
+.recognitionString {
+    font-style: italic;
 }
-.paragraphs {
-}
-.title {
-}
+
 .capitalize {
     text-transform: capitalize;
 }
 .pronoun {
 }
-.field {
-}
+
 .traila {
+    font-weight: bold;
 }
 .trailb {
+    font-weight: bold;
 }
 .recognition {
+    font-weight: bold;
 }
 .digitspan {
+    font-weight: bold;
 }
 .coding {
+    font-weight: bold;
 }
 .vocab {
+    font-weight: bold;
 }
 .vocabString {
+    font-style: italic;
 }
 .blockpatterns {
+    font-weight: bold;
 }
 .blockString {
+    font-style: italic;
 }
 .absreasoning {
+    font-weight: bold;
 }
 .absString {
+    font-style: italic;
 }
 .aqimpair {
+    font-weight: bold;
 }
 .aqString {
+    font-style: italic;
 }
 .bqimpair {
+    font-weight: bold;
 }
 .bqString {
+    font-style: italic;
 }
 .totalscore {
+    font-weight: bold;
 }
 .totalScoreString {
+    font-style: italic;
 }
 .orientation {
+    font-weight: bold;
 }
 .orientationString {
+    font-style: italic;
 }
 .presidential {
+    font-weight: bold;
 }
 .presidentialString {
+    font-style: italic;
 }
 .naming {
+    font-weight: bold;
 }
 .namingString {
+    font-style: italic;
 }
 .comprehension {
+    font-weight: bold;
 }
 .comprehensionString {
+    font-style: italic;
 }
 .praxis {
+    font-weight: bold;
 }
 .praxisString {
+    font-style: italic;
 }
 .shiftingset {
+    font-weight: bold;
 }
 .shiftingSetString {
+    font-style: italic;
 }
 .incompletepics {
+    font-weight: bold;
 }
 .incompletePicsString {
+    font-style: italic;
 }
 .similarities {
+    font-weight: bold;
 }
 .similaritiesString {
+    font-style: italic;
 }
 .attention {
+    font-weight: bold;
 }
 .attentionString {
+    font-style: italic;
 }
 .memory {
+    font-weight: bold;
 }
 .memoryString {
+    font-style: italic;
 }
 .fingers {
+    font-weight: bold;
 }
 .fingersString {
+    font-style: italic;
 }
 .recall {
+    font-weight: bold;
 }
 .deviationsString {
+    font-style: italic;
 }
 .letterfluency {
+    font-weight: bold;
 }
 .letterFluencyString {
+    font-style: italic;
 }
 .categoryfluency {
+    font-weight: bold;
 }
 .categoryFluencyString {
+    font-style: italic;
 }
 .categoryswitching {
+    font-weight: bold;
 }
 .categorySwitchingString {
+    font-style: italic;
 }
 .colornaming {
+    font-weight: bold;
 }
 .colorNamingString {
+    font-style: italic;
 }
 .wordreading {
+    font-weight: bold;
 }
 .wordReadingString {
+    font-style: italic;
 }
 .inhibition {
+    font-weight: bold;
 }
 .inhibitionString {
+    font-style: italic;
 }
 .inhibswitch {
+    font-weight: bold;
 }
 .switchString {
+    font-style: italic;
 }
 .motorcoord {
+    font-weight: bold;
 }
 .motorCoordString {
+    font-style: italic;
 }
 
 
