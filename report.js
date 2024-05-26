@@ -8,6 +8,7 @@ import { cogFunctionOnLoad } from "./cognitiveFunctioning.js";
 import { beeryOnLoad } from "./beeryVMI.js";
 import { dkefsOnLoad } from "./dkefs.js";
 import { wramlOnLoad } from "./wraml.js";
+import { validityOnLoad } from "./validityMeasures.js";
 
 export function jspdfDownload() {
     //window.html2canvas = html2canvas;
@@ -46,6 +47,7 @@ export function jspdfDownload() {
 export function replaceOnLoad() {
 
     basicInformation();
+    validityOnLoad();
     lateralizationOnLoad();
     cogFunctionOnLoad();
     wramlOnLoad();

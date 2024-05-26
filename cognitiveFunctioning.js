@@ -2,26 +2,26 @@
 function totalScoreString(totalscore) {
     switch(!isNaN(totalscore)) {
         case totalscore < 10:
-            return "severe cognitive impairment.";
+            return "severe cognitive impairment";
         case totalscore < 22:
-            return "moderate cognitive impairment.";
+            return "moderate cognitive impairment";
         case totalscore < 28:
-            return "mild cognitive impairment.";
+            return "mild cognitive impairment";
         default:
-            return "no cognitive impairment.";
+            return "no cognitive impairment";
     }
 }
 
 function subsetScoreToString(score) {
     switch(!isNaN(score)) {
         case score === 0:
-            return "severe impairment.";
+            return "severe impairment";
         case score === 1:
-            return "moderate impairment.";
+            return "moderate impairment";
         case score === 2:
             return "mild impairment";
         default:
-            return "no impairment.";
+            return "no impairment";
     }
 }
 
@@ -37,7 +37,7 @@ export function cogFunctionOnLoad() {
     document.getElementsByClassName('presidentialString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("presidential")));
 
     document.getElementsByClassName('naming')[0].innerText = sessionStorage.getItem("naming");
-    document.getElementsByClassName('namingString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("namingString")));
+    document.getElementsByClassName('namingString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("naming")));
 
     document.getElementsByClassName('comprehension')[0].innerText = sessionStorage.getItem("comprehension");
     document.getElementsByClassName('comprehensionString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("comprehension")));
@@ -53,6 +53,9 @@ export function cogFunctionOnLoad() {
 
     document.getElementsByClassName('similarities')[0].innerText = sessionStorage.getItem("similarities");
     document.getElementsByClassName('similaritiesString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("similarities")));
+
+    document.getElementsByClassName('attention')[0].innerText = sessionStorage.getItem("attention");
+    document.getElementsByClassName('attentionString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("attention")));
 
     document.getElementsByClassName('memory')[0].innerText = sessionStorage.getItem("memory");
     document.getElementsByClassName('memoryString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("memory")));
