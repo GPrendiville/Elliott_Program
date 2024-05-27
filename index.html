@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 
-<body>
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="page">
     <h1>Dr. Elliott Report Generator</h1>
 
     <form id="reportForm" action="./report.html" method="get">
@@ -35,16 +39,22 @@
 
         <fieldset>
             <legend>Lateralization:</legend>
-            <label for="vocab">Vocabulary</label><br>
-            <input type="number" id="vocab" name="vocab"><br>
-            <label for="blockpatterns">Block Patterns</label><br>
-            <input type="number" id="blockpatterns" name="blockpatterns"><br>
-            <label for="absreasoning">Abstract Reasoning</label><br>
-            <input type="number" id="absreasoning" name="absreasoning"><br>
-            <label for="aqimpair">AQ Impairment</label><br>
-            <input type="number" id="aqimpair" name="aqimpair"><br>
-            <label for="bqimpair">BQ Impairment</label><br>
-            <input type="number" id="bqimpair" name="bqimpair"><br>
+            <flexbox class="columns">
+                <div>
+                    <label for="vocab">Vocabulary</label><br>
+                    <input type="number" id="vocab" name="vocab"><br>
+                    <label for="blockpatterns">Block Patterns</label><br>
+                    <input type="number" id="blockpatterns" name="blockpatterns"><br>
+                    <label for="absreasoning">Abstract Reasoning</label><br>
+                    <input type="number" id="absreasoning" name="absreasoning"><br>
+                </div>
+                <div>
+                    <label for="aqimpair">AQ Impairment</label><br>
+                    <input type="number" id="aqimpair" name="aqimpair"><br>
+                    <label for="bqimpair">BQ Impairment</label><br>
+                    <input type="number" id="bqimpair" name="bqimpair"><br>
+                </div>
+            </flexbox>
         </fieldset>
 
         <fieldset>
@@ -86,7 +96,20 @@
         <fieldset>
             <legend>SDMT:</legend>
             <label for="deviations">Standard Deviations off Mean</label><br>
-            <input type="number" id="deviations" name="deviations"><br>
+            <select id="sdmt">
+                <option value="0">3.0 - 2.5</option>
+                <option value="0">2.5 - 2.0</option>
+                <option value="0">2.0 - 1.5</option>
+                <option value="0">1.5 - 1.0</option>
+                <option value="0">1.0 - 0.5</option>
+                <option value="0">0.5 - 0</option>
+                <option value="0">0 - -0.5</option>
+                <option value="0">-0.5 - -1.0</option>
+                <option value="0">-1.0 - -1.5</option>
+                <option value="0">-1.5 - -2.0</option>
+                <option value="0">-2.0 - -2.5</option>
+                <option value="0">-2.5 - -3.0</option>
+            </select>
         </fieldset>
 
         <fieldset>

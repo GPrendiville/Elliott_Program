@@ -1,4 +1,6 @@
 
+import { ordinal } from "./textConfirm";
+
 function fingersToString(fingers) {
     switch (!isNaN(fingers)) {
         case fingers < 2:
@@ -71,13 +73,13 @@ function wramlToString(percent) {
 
 export function wramlOnLoad() {
 
-    document.getElementsByClassName('fingers')[0].innerText = sessionStorage.getItem("fingers");
+    document.getElementsByClassName('fingers')[0].innerText = ordinal(sessionStorage.getItem("fingers"));
     document.getElementsByClassName('fingersString')[0].innerText = fingersToString(sessionStorage.getItem("fingers"));
 
-    document.getElementsByClassName('trialscore')[0].innerText = sessionStorage.getItem("trialscore");
+    document.getElementsByClassName('trialscore')[0].innerText = ordinal(sessionStorage.getItem("trialscore"));
     document.getElementsByClassName('trialString')[0].innerText = wramlToString(sessionStorage.getItem("trialscore"));
 
-    document.getElementsByClassName('recall')[0].innerText = sessionStorage.getItem("recall");
+    document.getElementsByClassName('recall')[0].innerText = ordinal(sessionStorage.getItem("recall"));
     document.getElementsByClassName('recallString')[0].innerText = wramlToString(sessionStorage.getItem("recall"));
 
     document.getElementsByClassName('recognitionString')[0].innerText = wramlToString(sessionStorage.getItem("recognition"));

@@ -1,0 +1,12 @@
+fieldset {
+    width: 50%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.columns {
+    display: flex;
+}

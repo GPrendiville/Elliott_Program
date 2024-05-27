@@ -7,7 +7,8 @@ Priority List:
 2. Option Select -> Cognitive Functioning and SDMT
 3. Insert Recognition Correctly
 4. Beautify Form (Columns within fieldset, spacing, desciptors?)
-5. Electron
+5. Beautify Report Viewer (Input list for confirmation purposes?)
+6. Electron
 
 
  

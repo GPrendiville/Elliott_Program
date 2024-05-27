@@ -1,4 +1,6 @@
 
+import { ordinal } from "./textConfirm";
+
 function motorCoordToString(motorcoord) {
     switch(!isNaN(motorcoord)) {
         case motorcoord < 5:
@@ -22,7 +24,7 @@ function motorCoordToString(motorcoord) {
 
 export function beeryOnLoad() {
 
-    document.getElementsByClassName('motorcoord')[0].innerText = sessionStorage.getItem("motorcoord");
+    document.getElementsByClassName('motorcoord')[0].innerText = ordinal(sessionStorage.getItem("motorcoord"));
     document.getElementsByClassName('motorCoordString')[0].innerText = motorCoordToString(sessionStorage.getItem("motorcoord"));
 
 }
