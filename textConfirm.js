@@ -1,22 +1,25 @@
 
 export function ordinal(number) {
+    if (!number) {
+        return "";
+    }
 
-    let j = i % 10;
-    let k = i % 100;
+    let j = number % 10;
+    let k = number % 100;
 
     if (j === 1 && k !== 11) {
-        return i + "st";
+        return number + "st";
     }
     
     if (j === 2 && k !== 12) {
-        return i + "nd";
+        return number + "nd";
     }
 
     if (j === 3 && k !== 13) {
-        return i + "rd";
+        return number + "rd";
     }
 
-    return i + "th";
+    return number + "th";
 
 }
 

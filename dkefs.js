@@ -1,3 +1,4 @@
+
 function dkefsToString(percent) {
     switch(!isNaN(percent)) {
         case percent < 5:
@@ -21,26 +22,26 @@ function dkefsToString(percent) {
 
 export function dkefsOnLoad() {
 
-    document.getElementsByClassName('letterfluency')[0].innerText = sessionStorage.getItem("letterfluency");
-    document.getElementsByClassName('letterFluencyString')[0].innerText = dkefsToString(sessionStorage.getItem("letterfluency"));
+    document.querySelectorAll(".letterfluency").forEach(element => element.innerText =  sessionStorage.getItem("letterfluency"));
+    document.querySelectorAll(".letterFluencyString").forEach(element => element.innerText =  dkefsToString(sessionStorage.getItem("letterfluency")));
 
-    document.getElementsByClassName('categoryfluency')[0].innerText = sessionStorage.getItem("categoryfluency");
-    document.getElementsByClassName('categoryFluencyString')[0].innerText = dkefsToString(sessionStorage.getItem("categoryfluency"));
+    document.querySelectorAll(".categoryfluency").forEach(element => element.innerText =  sessionStorage.getItem("categoryfluency"));
+    document.querySelectorAll(".categoryFluencyString").forEach(element => element.innerText =  dkefsToString(sessionStorage.getItem("categoryfluency")));
 
-    document.getElementsByClassName('categoryswitching')[0].innerText = sessionStorage.getItem("categoryswitching");
-    document.getElementsByClassName('categorySwitchingString')[0].innerText = dkefsToString(sessionStorage.getItem("categoryswitching"));
+    document.querySelectorAll(".categoryswitching").forEach(element => element.innerText =  sessionStorage.getItem("categoryswitching"));
+    document.querySelectorAll(".categorySwitchingString").forEach(element => element.innerText =  dkefsToString(sessionStorage.getItem("categoryswitching")));
 
-    document.getElementsByClassName('colornaming')[0].innerText = sessionStorage.getItem("colornaming");
-    document.getElementsByClassName('colorNamingString')[0].innerText = dkefsToString(sessionStorage.getItem("colornaming"));
+    document.querySelectorAll(".colornaming").forEach(element => element.innerText =  sessionStorage.getItem("colornaming"));
+    document.querySelectorAll(".colorNamingString").forEach(element => element.innerText =  dkefsToString(sessionStorage.getItem("colornaming")));
 
-    document.getElementsByClassName('wordreading')[0].innerText = sessionStorage.getItem("wordreading");
-    document.getElementsByClassName('wordReadingString')[0].innerText = dkefsToString(sessionStorage.getItem("wordreading"));
+    document.querySelectorAll(".wordreading").forEach(element => element.innerText =  sessionStorage.getItem("wordreading"));
+    document.querySelectorAll(".wordReadingString").forEach(element => element.innerText =  dkefsToString(sessionStorage.getItem("wordreading")));
 
-    document.getElementsByClassName('inhibition')[0].innerText = sessionStorage.getItem("inhibition");
-    document.getElementsByClassName('inhibitionString')[0].innerText = dkefsToString(sessionStorage.getItem("inhibition"));
+    document.querySelectorAll(".inhibition").forEach(element => element.innerText =  sessionStorage.getItem("inhibition"));
+    document.querySelectorAll(".inhibitonString").forEach(element => element.innerText =  dkefsToString(sessionStorage.getItem("inhibition")));
 
-    document.getElementsByClassName('inhibswitch')[0].innerText = sessionStorage.getItem("inhibswitch");
-    document.getElementsByClassName('switchString')[0].innerText = dkefsToString(sessionStorage.getItem("inhibswitch"));
+    document.querySelectorAll(".inhibswitch").forEach(element => element.innerText =  sessionStorage.getItem("inhibswitch"));
+    document.querySelectorAll(".switchString").forEach(element => element.innerText =  dkefsToString(sessionStorage.getItem("inhibswitch")));
 }
 
 // export function letterFluencyString(letterfluency) {

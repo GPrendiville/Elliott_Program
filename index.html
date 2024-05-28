@@ -39,21 +39,16 @@
 
         <fieldset>
             <legend>Lateralization:</legend>
-            <flexbox class="columns">
-                <div>
-                    <label for="vocab">Vocabulary</label><br>
-                    <input type="number" id="vocab" name="vocab"><br>
-                    <label for="blockpatterns">Block Patterns</label><br>
-                    <input type="number" id="blockpatterns" name="blockpatterns"><br>
-                    <label for="absreasoning">Abstract Reasoning</label><br>
-                    <input type="number" id="absreasoning" name="absreasoning"><br>
-                </div>
-                <div>
-                    <label for="aqimpair">AQ Impairment</label><br>
-                    <input type="number" id="aqimpair" name="aqimpair"><br>
-                    <label for="bqimpair">BQ Impairment</label><br>
-                    <input type="number" id="bqimpair" name="bqimpair"><br>
-                </div>
+            <label for="vocab">Vocabulary</label><br>
+            <input type="number" id="vocab" name="vocab"><br>
+            <label for="blockpatterns">Block Patterns</label><br>
+            <input type="number" id="blockpatterns" name="blockpatterns"><br>
+            <label for="absreasoning">Abstract Reasoning</label><br>
+            <input type="number" id="absreasoning" name="absreasoning"><br>
+            <label for="aqimpair">AQ Impairment</label><br>
+            <input type="number" id="aqimpair" name="aqimpair"><br>
+            <label for="bqimpair">BQ Impairment</label><br>
+            <input type="number" id="bqimpair" name="bqimpair"><br>
             </flexbox>
         </fieldset>
 
@@ -62,25 +57,84 @@
             <label for="totalscore">Total Score</label><br>
             <input type="number" id="totalscore" name="totalscore"><br>
             <label for="orientation">Orientation</label><br>
-            <input type="number" id="orientation" name="orientation"><br>
+            <select id="orientation">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
             <label for="presidential">Presidential</label><br>
-            <input type="number" id="presidential" name="presidential"><br>
+            <select id="presidential">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
             <label for="naming">Naming</label><br>
-            <input type="number" id="naming" name="naming"><br>
+            <select id="naming">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
             <label for="comprehension">Comprehension</label><br>
-            <input type="number" id="comprehension" name="comprehension"><br>
+            <select id="comprehension">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
             <label for="praxis">Constructive Praxis</label><br>
-            <input type="number" id="praxis" name="praxis"><br>
+            <select id="praxis">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
             <label for="shiftingset">Shifting Set</label><br>
-            <input type="number" id="shiftingset" name="shiftingset"><br>
+            <select id="shiftingset">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
             <label for="incompletepics">Incomplete Pictures</label><br>
-            <input type="number" id="incompletepics" name="incompletepics"><br>
+            <select id="incompletepics">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
             <label for="similarities">Similarities</label><br>
-            <input type="number" id="similarities" name="similarities"><br>
+            <select id="similarities">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
             <label for="attention">Attention</label><br>
-            <input type="number" id="attention" name="attention"><br>
+            <select id="attention">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
             <label for="memory">Working Memory</label><br>
-            <input type="number" id="memory" name="memory"><br>
+            <select id="memory">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
         </fieldset>
 
         <fieldset>
@@ -97,18 +151,18 @@
             <legend>SDMT:</legend>
             <label for="deviations">Standard Deviations off Mean</label><br>
             <select id="sdmt">
-                <option value="0">3.0 - 2.5</option>
-                <option value="0">2.5 - 2.0</option>
-                <option value="0">2.0 - 1.5</option>
-                <option value="0">1.5 - 1.0</option>
-                <option value="0">1.0 - 0.5</option>
-                <option value="0">0.5 - 0</option>
-                <option value="0">0 - -0.5</option>
-                <option value="0">-0.5 - -1.0</option>
-                <option value="0">-1.0 - -1.5</option>
-                <option value="0">-1.5 - -2.0</option>
-                <option value="0">-2.0 - -2.5</option>
-                <option value="0">-2.5 - -3.0</option>
+                <option value="0">3.0 to 2.5</option>
+                <option value="1">2.5 to 2.0</option>
+                <option value="2">2.0 to 1.5</option>
+                <option value="3">1.5 to 1.0</option>
+                <option value="4">1.0 to 0.5</option>
+                <option value="5">0.5 to 0</option>
+                <option value="6">0 to -0.5</option>
+                <option value="7">-0.5 to -1.0</option>
+                <option value="8">-1.0 to -1.5</option>
+                <option value="9">-1.5 to -2.0</option>
+                <option value="10">-2.0 to -2.5</option>
+                <option value="11">-2.5 to -3.0</option>
             </select>
         </fieldset>
 

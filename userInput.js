@@ -78,47 +78,17 @@ function toPDF() {
     sessionStorage.setItem("gender", document.getElementById('gender').value.toUpperCase());
 
     //Validity Measures - Waiting on meeting with Dr. Elliott
-    // traila = document.getElementById('traila').value;
     sessionStorage.setItem("traila", document.getElementById('traila').value);
-    // trailb = document.getElementById('trailb').value;
     sessionStorage.setItem("trailb", document.getElementById('trailb').value);
-    // recognition = document.getElementById('recognition').value;
     sessionStorage.setItem("recognition", document.getElementById('recognition').value);
-    // digitspan = document.getElementById('digitspan').value;
     sessionStorage.setItem("digitspan", document.getElementById('digitspan').value);
-    // coding = document.getElementById('coding').value;
     sessionStorage.setItem("coding", document.getElementById('coding').value);
-    // crin = document.getElementById('crin').value;
-    sessionStorage.setItem("crin", document.getElementById('crin').value);
-    // wrin = document.getElementById('wrin').value;
-    sessionStorage.setItem("wrin", document.getElementById('wrin').value);
-    // trin = document.getElementById('trin').value;
-    sessionStorage.setItem("trin", document.getElementById('trin').value);
-    // f = document.getElementById('f').value;
-    sessionStorage.setItem("f", document.getElementById('f').value);
-    // fp = document.getElementById('fp').value;
-    sessionStorage.setItem("fp", document.getElementById('fp').value);
-    // fs = document.getElementById('fs').value;
-    sessionStorage.setItem("fs", document.getElementById('fs').value);
-    // fbs = document.getElementById('fbs').value;
-    sessionStorage.setItem("fbs", document.getElementById('fbs').value);
-    // rbs = document.getElementById('rbs').value;
-    sessionStorage.setItem("rbs", document.getElementById('rbs').value);
-    // l = document.getElementById('l').value;
-    sessionStorage.setItem("l", document.getElementById('l').value);
-    // k = document.getElementById('k').value;
-    sessionStorage.setItem("k", document.getElementById('k').value);
 
     //Lateralization
-    // vocab = document.getElementById('vocab').value;
     sessionStorage.setItem("vocab", document.getElementById('vocab').value);
-    // blockpatterns = document.getElementById('blockpatterns').value;
     sessionStorage.setItem("blockpatterns", document.getElementById('blockpatterns').value);
-    // absreasoning = document.getElementById('absreasoning').value;
     sessionStorage.setItem("absreasoning", document.getElementById('absreasoning').value);
-    // aqimpair = document.getElementById('aqimpair').value;
     sessionStorage.setItem("aqimpair", document.getElementById('aqimpair').value);
-    // bqimpair = document.getElementById('bqimpair').value;
     sessionStorage.setItem("bqimpair", document.getElementById('bqimpair').value);
 
     //Cognitive Functioning
@@ -156,7 +126,7 @@ function toPDF() {
 
     //SDMT
     // deviations = document.getElementById('deviations').value;
-    sessionStorage.setItem("deviations", document.getElementById('deviations').value);
+    sessionStorage.setItem("sdmt", document.getElementById('sdmt').value);
 
     //D-KEFS
     // letterfluency = document.getElementById('letterfluency').value;

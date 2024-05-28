@@ -1,5 +1,5 @@
 
-import { ordinal } from "./textConfirm";
+import { ordinal } from "./textConfirm.js";
 
 function fingersToString(fingers) {
     switch (!isNaN(fingers)) {
@@ -15,38 +15,6 @@ function fingersToString(fingers) {
             return "high average range";
         default:
             return "very superior range";
-    }
-}
-
-function scaledFingersToString(fingers) {
-    switch (!isNaN(fingers)) {
-        case fingers === 4:
-            return "4, which is the 2nd%, indicating a very poor performance";
-        case fingers === 5:
-            return "5, which is the 5th%, indicating a very poor performance";
-        case fingers === 6:
-            return "6, which is the 9th%, indicating a very poor performance";
-        case fingers === 7:
-            return "7, which is the 16th%, indicating a very poor performance";
-        case fingers === 8:
-            return "8, which is the 25th%, indicating a very poor performance";
-        case fingers === 9:
-            return "9, which is the 37th%, indicating a very poor performance";
-        case fingers === 10:
-            return "10, which is the 50th%, indicating a very poor performance";
-        case fingers === 11:
-            return "11, which is the 63rd%, indicating a very poor performance";
-        case fingers === 12:
-            return "12, which is the 75th%, indicating a very poor performance";
-        case fingers === 13:
-            return "13, which is the 84th%, indicating a very poor performance";
-        case fingers === 14:
-            return "14, which is the 91th%, indicating a very poor performance";
-        case fingers === 15:
-            return "15, which is the 95th%, indicating a very poor performance";
-        default:
-            return "16, which is the 98th%, indication excellent performance";
-
     }
 }
 
@@ -73,16 +41,23 @@ function wramlToString(percent) {
 
 export function wramlOnLoad() {
 
-    document.getElementsByClassName('fingers')[0].innerText = ordinal(sessionStorage.getItem("fingers"));
-    document.getElementsByClassName('fingersString')[0].innerText = fingersToString(sessionStorage.getItem("fingers"));
+    // document.getElementsByClassName('fingers')[0].innerText = ordinal(sessionStorage.getItem("fingers"));
+    // document.getElementsByClassName('fingersString')[0].innerText = fingersToString(sessionStorage.getItem("fingers"));
+    document.querySelectorAll(".fingers").forEach(element => element.innerText = ordinal(sessionStorage.getItem("fingers")));
+    document.querySelectorAll(".fingerString").forEach(element => element.innerText = fingersToString(sessionStorage.getItem("fingers")));
 
-    document.getElementsByClassName('trialscore')[0].innerText = ordinal(sessionStorage.getItem("trialscore"));
-    document.getElementsByClassName('trialString')[0].innerText = wramlToString(sessionStorage.getItem("trialscore"));
+    // document.getElementsByClassName('trialscore')[0].innerText = ordinal(sessionStorage.getItem("trialscore"));
+    // document.getElementsByClassName('trialString')[0].innerText = wramlToString(sessionStorage.getItem("trialscore"));
+    document.querySelectorAll(".trialscore").forEach(element => element.innerText = ordinal(sessionStorage.getItem("trialscore")));
+    document.querySelectorAll(".trialString").forEach(element => element.innerText = wramlToString(sessionStorage.getItem("trialscore")));
+    
+    // document.getElementsByClassName('recall')[0].innerText = ordinal(sessionStorage.getItem("recall"));
+    // document.getElementsByClassName('recallString')[0].innerText = wramlToString(sessionStorage.getItem("recall"));
+    document.querySelectorAll(".recall").forEach(element => element.innerText = ordinal(sessionStorage.getItem("recall")));
+    document.querySelectorAll(".recallString").forEach(element => element.innerText = wramlToString(sessionStorage.getItem("recall")));
 
-    document.getElementsByClassName('recall')[0].innerText = ordinal(sessionStorage.getItem("recall"));
-    document.getElementsByClassName('recallString')[0].innerText = wramlToString(sessionStorage.getItem("recall"));
-
-    document.getElementsByClassName('recognitionString')[0].innerText = wramlToString(sessionStorage.getItem("recognition"));
+    // document.getElementsByClassName('recognitionString')[0].innerText = wramlToString(sessionStorage.getItem("recognition"));
+    document.querySelectorAll(".recognitionString").forEach(element => element.innerText = wramlToString(sessionStorage.getItem("recognition")));
 
 }
 

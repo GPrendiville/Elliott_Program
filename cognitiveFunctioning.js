@@ -14,6 +14,7 @@ function totalScoreString(totalscore) {
 
 function subsetScoreToString(score) {
     switch(!isNaN(score)) {
+        // -1?
         case score === 0:
             return "severe impairment";
         case score === 1:
@@ -27,38 +28,38 @@ function subsetScoreToString(score) {
 
 export function cogFunctionOnLoad() {
 
-    document.getElementsByClassName('totalscore')[0].innerText = sessionStorage.getItem("totalscore");
-    document.getElementsByClassName('totalScoreString')[0].innerText = totalScoreString(sessionStorage.getItem("totalscore"));
+    document.querySelectorAll(".totalscore").forEach(element => element.innerText = sessionStorage.getItem("totalscore"));
+    document.querySelectorAll(".totalScoreString").forEach(element => element.innerText = totalScoreString(sessionStorage.getItem("totalscore")));
 
-    document.getElementsByClassName('orientation')[0].innerText = sessionStorage.getItem("orientation");
-    document.getElementsByClassName('orientationString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("orientation")));
+    document.querySelectorAll(".orientation").forEach(element => element.innerText = sessionStorage.getItem("orientation"));
+    document.querySelectorAll(".orientationString").forEach(element => element.innerText = subsetScoreToString(sessionStorage.getItem("orientation")));
 
-    document.getElementsByClassName('presidential')[0].innerText = sessionStorage.getItem("presidential");
-    document.getElementsByClassName('presidentialString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("presidential")));
+    document.querySelectorAll(".presidential").forEach(element => element.innerText = sessionStorage.getItem("presidential"));
+    document.querySelectorAll(".presidentialString").forEach(element => element.innerText = subsetScoreToString(sessionStorage.getItem("presidential")));
 
-    document.getElementsByClassName('naming')[0].innerText = sessionStorage.getItem("naming");
-    document.getElementsByClassName('namingString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("naming")));
+    document.querySelectorAll(".naming").forEach(element => element.innerText = sessionStorage.getItem("naming"));
+    document.querySelectorAll(".namingString").forEach(element => element.innerText = subsetScoreToString(sessionStorage.getItem("naming")));
 
-    document.getElementsByClassName('comprehension')[0].innerText = sessionStorage.getItem("comprehension");
-    document.getElementsByClassName('comprehensionString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("comprehension")));
+    document.querySelectorAll(".comprehension").forEach(element => element.innerText = sessionStorage.getItem("comprehension"));
+    document.querySelectorAll(".comprehensionString").forEach(element => element.innerText = subsetScoreToString(sessionStorage.getItem("comprehension")));
 
-    document.getElementsByClassName('praxis')[0].innerText = sessionStorage.getItem("praxis");
-    document.getElementsByClassName('praxisString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("praxis")));
+    document.querySelectorAll(".praxis").forEach(element => element.innerText = sessionStorage.getItem("praxis"));
+    document.querySelectorAll(".praxisString").forEach(element => element.innerText = subsetScoreToString(sessionStorage.getItem("praxis")));
 
-    document.getElementsByClassName('shiftingset')[0].innerText = sessionStorage.getItem("shiftingset");
-    document.getElementsByClassName('shiftingSetString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("shiftingset")));
+    document.querySelectorAll(".shiftingset").forEach(element => element.innerText = sessionStorage.getItem("shiftingset"));
+    document.querySelectorAll(".shiftingSetString").forEach(element => element.innerText = subsetScoreToString(sessionStorage.getItem("shiftingset")));
 
-    document.getElementsByClassName('incompletepics')[0].innerText = sessionStorage.getItem("incompletepics");
-    document.getElementsByClassName('incompletePicsString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("incompletepics")));
+    document.querySelectorAll(".incompletepics").forEach(element => element.innerText = sessionStorage.getItem("incompletepics"));
+    document.querySelectorAll(".incompletePicsString").forEach(element => element.innerText = subsetScoreToString(sessionStorage.getItem("incompletepics")));
 
-    document.getElementsByClassName('similarities')[0].innerText = sessionStorage.getItem("similarities");
-    document.getElementsByClassName('similaritiesString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("similarities")));
+    document.querySelectorAll(".similarities").forEach(element => element.innerText = sessionStorage.getItem("similarities"));
+    document.querySelectorAll(".similaritiesString").forEach(element => element.innerText = subsetScoreToString(sessionStorage.getItem("similarities")));
 
-    document.getElementsByClassName('attention')[0].innerText = sessionStorage.getItem("attention");
-    document.getElementsByClassName('attentionString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("attention")));
+    document.querySelectorAll(".attention").forEach(element => element.innerText = sessionStorage.getItem("attention"));
+    document.querySelectorAll(".attentionString").forEach(element => element.innerText = subsetScoreToString(sessionStorage.getItem("attention")));
 
-    document.getElementsByClassName('memory')[0].innerText = sessionStorage.getItem("memory");
-    document.getElementsByClassName('memoryString')[0].innerText = subsetScoreToString(parseInt(sessionStorage.getItem("memory")));
+    document.querySelectorAll(".memory").forEach(element => element.innerText = sessionStorage.getItem("memory"));
+    document.querySelectorAll(".memoryString").forEach(element => element.innerText = subsetScoreToString(sessionStorage.getItem("memory")));
 
 }
 
