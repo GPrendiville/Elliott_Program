@@ -69,11 +69,11 @@ function toPDF() {
     let month = today.getMonth() + 1;
     let year = today.getFullYear();
 
-    reportdate = `${day}-${month}-${year}`;
-    sessionStorage.setItem("reportdate", `${year}-${day}-${month}`);
-    title = document.getElementById('gender').value.toUpperCase() === "MALE" ? "Mr." : "Ms.";
+    let reportdate = `${year}-${day}-${month}`;
+    sessionStorage.setItem("reportdate", reportdate);
+    let title = document.getElementById('gender').value.toUpperCase() === "MALE" ? "Mr." : "Ms.";
     sessionStorage.setItem("title", title);
-    pronoun = document.getElementById('gender').value.toUpperCase() === "MALE" ? "his" : "her";
+    let pronoun = document.getElementById('gender').value.toUpperCase() === "MALE" ? "his" : "her";
     sessionStorage.setItem("pronoun", pronoun);
     sessionStorage.setItem("gender", document.getElementById('gender').value.toUpperCase());
 

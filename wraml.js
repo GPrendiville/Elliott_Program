@@ -41,23 +41,23 @@ function wramlToString(percent) {
 
 export function wramlOnLoad() {
 
-    // document.getElementsByClassName('fingers')[0].innerText = ordinal(sessionStorage.getItem("fingers"));
-    // document.getElementsByClassName('fingersString')[0].innerText = fingersToString(sessionStorage.getItem("fingers"));
-    document.querySelectorAll(".fingers").forEach(element => element.innerText = ordinal(sessionStorage.getItem("fingers")));
-    document.querySelectorAll(".fingerString").forEach(element => element.innerText = fingersToString(sessionStorage.getItem("fingers")));
+    // document.getElementsByClassName('fingers')[0].textContent = ordinal(sessionStorage.getItem("fingers"));
+    // document.getElementsByClassName('fingersString')[0].textContent = fingersToString(sessionStorage.getItem("fingers"));
+    document.querySelectorAll(".fingers").forEach(element => element.textContent = ordinal(sessionStorage.getItem("fingers")));
+    document.querySelectorAll(".fingersString").forEach(element => element.textContent = fingersToString(sessionStorage.getItem("fingers")));
 
-    // document.getElementsByClassName('trialscore')[0].innerText = ordinal(sessionStorage.getItem("trialscore"));
-    // document.getElementsByClassName('trialString')[0].innerText = wramlToString(sessionStorage.getItem("trialscore"));
-    document.querySelectorAll(".trialscore").forEach(element => element.innerText = ordinal(sessionStorage.getItem("trialscore")));
-    document.querySelectorAll(".trialString").forEach(element => element.innerText = wramlToString(sessionStorage.getItem("trialscore")));
+    // document.getElementsByClassName('trialscore')[0].textContent = ordinal(sessionStorage.getItem("trialscore"));
+    // document.getElementsByClassName('trialString')[0].textContent = wramlToString(sessionStorage.getItem("trialscore"));
+    document.querySelectorAll(".trialscore").forEach(element => element.textContent = ordinal(sessionStorage.getItem("trialscore")));
+    document.querySelectorAll(".trialString").forEach(element => element.textContent = wramlToString(sessionStorage.getItem("trialscore")));
     
-    // document.getElementsByClassName('recall')[0].innerText = ordinal(sessionStorage.getItem("recall"));
-    // document.getElementsByClassName('recallString')[0].innerText = wramlToString(sessionStorage.getItem("recall"));
-    document.querySelectorAll(".recall").forEach(element => element.innerText = ordinal(sessionStorage.getItem("recall")));
-    document.querySelectorAll(".recallString").forEach(element => element.innerText = wramlToString(sessionStorage.getItem("recall")));
+    // document.getElementsByClassName('recall')[0].textContent = ordinal(sessionStorage.getItem("recall"));
+    // document.getElementsByClassName('recallString')[0].textContent = wramlToString(sessionStorage.getItem("recall"));
+    document.querySelectorAll(".recall").forEach(element => element.textContent = ordinal(sessionStorage.getItem("recall")));
+    document.querySelectorAll(".recallString").forEach(element => element.textContent = wramlToString(sessionStorage.getItem("recall")));
 
-    // document.getElementsByClassName('recognitionString')[0].innerText = wramlToString(sessionStorage.getItem("recognition"));
-    document.querySelectorAll(".recognitionString").forEach(element => element.innerText = wramlToString(sessionStorage.getItem("recognition")));
+    // document.getElementsByClassName('recognitionString')[0].textContent = wramlToString(sessionStorage.getItem("recognition"));
+    document.querySelectorAll(".recognitionString").forEach(element => element.textContent = wramlToString(sessionStorage.getItem("recognition")));
 
 }
 

@@ -20,24 +20,24 @@ function lateralizationToString(field) {
 
 export function lateralizationOnLoad() {
 
-    document.querySelectorAll(".vocab").forEach(element => element.innerText = sessionStorage.getItem("vocab"));
-    document.querySelectorAll(".vocabString").forEach(element => element.innerText = lateralizationToString(sessionStorage.getItem("vocab")));
+    document.querySelectorAll(".vocab").forEach(element => element.textContent = sessionStorage.getItem("vocab"));
+    document.querySelectorAll(".vocabString").forEach(element => element.textContent = lateralizationToString(sessionStorage.getItem("vocab")));
 
 
-    document.querySelectorAll(".blockpatterns").forEach(element => element.innerText = sessionStorage.getItem("blockpatterns"));
-    document.querySelectorAll(".blockString").forEach(element => element.innerText = lateralizationToString(sessionStorage.getItem("blockpatterns")));
+    document.querySelectorAll(".blockpatterns").forEach(element => element.textContent = sessionStorage.getItem("blockpatterns"));
+    document.querySelectorAll(".blockString").forEach(element => element.textContent = lateralizationToString(sessionStorage.getItem("blockpatterns")));
 
 
-    document.querySelectorAll(".absreasoning").forEach(element => element.innerText = sessionStorage.getItem("absreasoning"));
-    document.querySelectorAll(".absString").forEach(element => element.innerText = lateralizationToString(sessionStorage.getItem("absreasoning")));
+    document.querySelectorAll(".absreasoning").forEach(element => element.textContent = sessionStorage.getItem("absreasoning"));
+    document.querySelectorAll(".absString").forEach(element => element.textContent = lateralizationToString(sessionStorage.getItem("absreasoning")));
 
 
-    document.querySelectorAll(".aqimpair").forEach(element => element.innerText = sessionStorage.getItem("aqimpair"));
-    document.querySelectorAll(".aqString").forEach(element => element.innerText = lateralizationToString(sessionStorage.getItem("aqimpair")));
+    document.querySelectorAll(".aqimpair").forEach(element => element.textContent = sessionStorage.getItem("aqimpair"));
+    document.querySelectorAll(".aqString").forEach(element => element.textContent = lateralizationToString(sessionStorage.getItem("aqimpair")));
 
 
-    document.querySelectorAll(".bqimpair").forEach(element => element.innerText = sessionStorage.getItem("bqimpair"));
-    document.querySelectorAll(".bqString").forEach(element => element.innerText = lateralizationToString(sessionStorage.getItem("bqimpair")));
+    document.querySelectorAll(".bqimpair").forEach(element => element.textContent = sessionStorage.getItem("bqimpair"));
+    document.querySelectorAll(".bqString").forEach(element => element.textContent = lateralizationToString(sessionStorage.getItem("bqimpair")));
 
 
 }

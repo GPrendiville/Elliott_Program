@@ -18,7 +18,7 @@ export function jspdfDownload() {
     const forpdf = document.getElementById('reportforpdf')
     const opt = {
         callback: function (doc) {
-            doc.save("jspdf-test.pdf");
+            doc.save(`${sessionStorage.getItem("lname")}.pdf`);
         },
         margin: [72, 72, 72, 72],
         autoPaging: 'text',
@@ -59,7 +59,7 @@ export function replaceOnLoad() {
 
 function basicInformation() {
 
-    document.querySelectorAll(".fname").forEach(element => element.innerText = sessionStorage.getItem("fname"));
+    document.querySelectorAll(".fname").forEach(element => element.textContent = sessionStorage.getItem("fname"));
 
     // var fnameElements = document.getElementsByClassName('fname');
     // console.log(fnameElements.length)
@@ -67,7 +67,7 @@ function basicInformation() {
     //     fnameElements[i].innerText = sessionStorage.getItem("fname");
     // }
 
-    document.querySelectorAll(".lname").forEach(element => element.innerText = sessionStorage.getItem("lname"));
+    document.querySelectorAll(".lname").forEach(element => element.textContent = sessionStorage.getItem("lname"));
 
     // var lnameElements = document.getElementsByClassName('lname');
     // console.log(lnameElements.length)
@@ -75,21 +75,21 @@ function basicInformation() {
     //     lnameElements[i].innerText = sessionStorage.getItem("lname");
     // }
 
-    document.getElementsByClassName('dob')[0].innerText = sessionStorage.getItem("dateofbirth");
+    document.querySelectorAll(".dob").forEach(element => element.textContent = sessionStorage.getItem("dateofbirth"));
 
-    document.getElementsByClassName('age')[0].innerText = sessionStorage.getItem("age");
+    document.querySelectorAll(".age").forEach(element => element.textContent = sessionStorage.getItem("age"));
 
-    document.getElementsByClassName('reportdate')[0].innerText = sessionStorage.getItem("reportdate");
+    document.querySelectorAll(".reportdate").forEach(element => element.textContent = sessionStorage.getItem("reportdate"));
 
-    document.getElementsByClassName('gender')[0].innerText = sessionStorage.getItem("gender");
+    document.querySelectorAll(".gender").forEach(element => element.textContent = sessionStorage.getItem("gender"));
 
-    document.querySelectorAll(".title").forEach(element => element.innerText = sessionStorage.getItem("title"));
+    document.querySelectorAll(".title").forEach(element => element.textContent = sessionStorage.getItem("title"));
 
     // var titleElements = document.getElementsByClassName('title');
     // for (let i=0; i< fnameElements.length; i++) {
     //     titleElements[i].innerText = sessionStorage.getItem("title");
     // }
 
-    document.querySelectorAll(".pronoun").forEach(element => element.innerText = sessionStorage.getItem("pronoun"));
+    document.querySelectorAll(".pronoun").forEach(element => element.textContent = sessionStorage.getItem("pronoun"));
     
 }

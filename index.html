@@ -6,150 +6,150 @@
 </head>
 
 <body class="page">
-    <h1>Dr. Elliott Report Generator</h1>
+    <div class="header"> <img class="logo" src="logo.png" alt=""> </div>
 
     <form id="reportForm" action="./report.html" method="get">
-        <fieldset>
-            <legend>Basic Information:</legend>
-            <label for="fname">First Name</label><br>
+        <fieldset class="grouping">
+            <legend>Basic Information</legend>
+            <label for="fname">First Name</label>
             <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last Name</label><br>
+            <label for="lname">Last Name</label>
             <input type="text" id="lname" name="lname"><br>
-            <label for="dateofbirth">Date of Birth</label><br>
+            <label for="dateofbirth">Date of Birth</label>
             <input type="date" id="dateofbirth" name="dateofbirth"><br>
-            <label for="age">Age</label><br>
+            <label for="age">Age</label>
             <input type="number" id="age" name="age"><br>
-            <label for="gender">Gender</label><br>
+            <label for="gender">Gender</label>
             <input type="text" id="gender" name="gender"><br>
         </fieldset>
 
-        <fieldset>
-            <legend>Validity Measures:</legend>
-            <label for="traila">Trail Making (A)</label><br>
+        <fieldset class="grouping">
+            <legend>Validity Measures</legend>
+            <label for="traila">Trail Making (A)</label>
             <input type="number" id="traila" name="traila"><br>
-            <label for="trailb">Trial Making (B)</label><br>
+            <label for="trailb">Trial Making (B)</label>
             <input type="number" id="trailb" name="trailb"><br>
-            <label for="recognition">Recognition (RAVLT)</label><br>
+            <label for="recognition">Recognition (RAVLT)</label>
             <input type="number" id="recognition" name="recognition"><br>
-            <label for="digitspan">Digit Span</label><br>
+            <label for="digitspan">Digit Span</label>
             <input type="number" id="digitspan" name="digitspan"><br>
-            <label for="coding">Coding</label><br>
+            <label for="coding">Coding</label>
             <input type="number" id="coding" name="coding"><br>
         </fieldset>
 
-        <fieldset>
-            <legend>Lateralization:</legend>
-            <label for="vocab">Vocabulary</label><br>
+        <fieldset class="grouping">
+            <legend>Lateralization</legend>
+            <label for="vocab">Vocabulary</label>
             <input type="number" id="vocab" name="vocab"><br>
-            <label for="blockpatterns">Block Patterns</label><br>
+            <label for="blockpatterns">Block Patterns</label>
             <input type="number" id="blockpatterns" name="blockpatterns"><br>
-            <label for="absreasoning">Abstract Reasoning</label><br>
+            <label for="absreasoning">Abstract Reasoning</label>
             <input type="number" id="absreasoning" name="absreasoning"><br>
-            <label for="aqimpair">AQ Impairment</label><br>
+            <label for="aqimpair">AQ Impairment</label>
             <input type="number" id="aqimpair" name="aqimpair"><br>
-            <label for="bqimpair">BQ Impairment</label><br>
+            <label for="bqimpair">BQ Impairment</label>
             <input type="number" id="bqimpair" name="bqimpair"><br>
             </flexbox>
         </fieldset>
 
-        <fieldset>
-            <legend>Cognitive Functioning:</legend>
-            <label for="totalscore">Total Score</label><br>
+        <fieldset class="grouping">
+            <legend>Cognitive Functioning</legend>
+            <label for="totalscore">Total Score</label>
             <input type="number" id="totalscore" name="totalscore"><br>
-            <label for="orientation">Orientation</label><br>
+            <label for="orientation">Orientation</label>
             <select id="orientation">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
-            </select>
+            </select> <br>
 
-            <label for="presidential">Presidential</label><br>
+            <label for="presidential">Presidential</label>
             <select id="presidential">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
-            </select>
+            </select> <br>
 
-            <label for="naming">Naming</label><br>
+            <label for="naming">Naming</label>
             <select id="naming">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
-            </select>
+            </select> <br>
 
-            <label for="comprehension">Comprehension</label><br>
+            <label for="comprehension">Comprehension</label>
             <select id="comprehension">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
-            </select>
+            </select> <br>
 
-            <label for="praxis">Constructive Praxis</label><br>
+            <label for="praxis">Constructive Praxis</label>
             <select id="praxis">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
-            </select>
+            </select> <br>
 
-            <label for="shiftingset">Shifting Set</label><br>
+            <label for="shiftingset">Shifting Set</label>
             <select id="shiftingset">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
-            </select>
+            </select> <br>
 
-            <label for="incompletepics">Incomplete Pictures</label><br>
+            <label for="incompletepics">Incomplete Pictures</label>
             <select id="incompletepics">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
-            </select>
+            </select> <br>
 
-            <label for="similarities">Similarities</label><br>
+            <label for="similarities">Similarities</label>
             <select id="similarities">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
-            </select>
+            </select> <br>
 
-            <label for="attention">Attention</label><br>
+            <label for="attention">Attention</label>
             <select id="attention">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
-            </select>
+            </select> <br>
 
-            <label for="memory">Working Memory</label><br>
+            <label for="memory">Working Memory</label>
             <select id="memory">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
-            </select>
+            </select> <br>
         </fieldset>
 
-        <fieldset>
-            <legend>WRAML-2:</legend>
-            <label for="fingers">Finger Windows</label><br>
+        <fieldset class="grouping">
+            <legend>WRAML-2</legend>
+            <label for="fingers">Finger Windows</label>
             <input type="number" id="fingers" name="fingers"><br>
-            <label for="trialscore">Trial I-V Total Score (RAVLT)</label><br>
+            <label for="trialscore">Trial I-V Total Score (RAVLT)</label>
             <input type="number" id="trialscore" name="trialscore"><br>
-            <label for="recall">Delayed Recall (RAVLT)</label><br>
+            <label for="recall">Delayed Recall (RAVLT)</label>
             <input type="number" id="recall" name="recall"><br>
         </fieldset>
 
-        <fieldset>
-            <legend>SDMT:</legend>
-            <label for="deviations">Standard Deviations off Mean</label><br>
+        <fieldset class="grouping">
+            <legend>SDMT</legend>
+            <label for="deviations">Standard Deviations off Mean</label>
             <select id="sdmt">
                 <option value="0">3.0 to 2.5</option>
                 <option value="1">2.5 to 2.0</option>
@@ -166,32 +166,32 @@
             </select>
         </fieldset>
 
-        <fieldset>
-            <legend>D-KEFS:</legend>
-            <label for="letterfluency">Letter Fluency Percentile</label><br>
+        <fieldset class="grouping">
+            <legend>D-KEFS</legend>
+            <label for="letterfluency">Letter Fluency Percentile</label>
             <input type="number" id="letterfluency" name="letterfluency"><br>
-            <label for="categoryfluency">Category Fluency Percentile</label><br>
+            <label for="categoryfluency">Category Fluency Percentile</label>
             <input type="number" id="categoryfluency" name="categoryfluency"><br>
-            <label for="categoryswitching">Category Switching Percentile</label><br>
+            <label for="categoryswitching">Category Switching Percentile</label>
             <input type="number" id="categoryswitching" name="categoryswitching"><br>
-            <label for="colornaming">Color Naming Percentile</label><br>
+            <label for="colornaming">Color Naming Percentile</label>
             <input type="number" id="colornaming" name="colornaming"><br>
-            <label for="wordreading">Word Reading Percentile</label><br>
+            <label for="wordreading">Word Reading Percentile</label>
             <input type="number" id="wordreading" name="wordreading"><br>
-            <label for="inhibition">Inhibition Percentile</label><br>
+            <label for="inhibition">Inhibition Percentile</label>
             <input type="number" id="inhibition" name="inhibition"><br>
-            <label for="inhib-switch">Inhibition/Switching Task Percentile</label><br>
+            <label for="inhib-switch">Inhibition/Switching Task Percentile</label>
             <input type="number" id="inhibswitch" name="inhibswitch"><br>
         </fieldset>
 
-        <fieldset>
-            <legend>Beery VMI:</legend>
-            <label for="motorcoord">Motor Coordination Percentile</label><br>
+        <fieldset class="grouping">
+            <legend>Beery VMI</legend>
+            <label for="motorcoord">Motor Coordination Percentile</label>
             <input type="number" id="motorcoord" name="motorcoord"><br>
         </fieldset>
 
-        <fieldset>
-            <legend>Diagnoses:</legend>
+        <fieldset class="grouping">
+            <legend>Diagnoses</legend>
             <input type="checkbox" id="depression" name="diagnoses" value="Depression">
             <label for="depression">Depression</label><br>
             <input type="checkbox" id="physpain" name="diagnoses" value="Pain">

@@ -1,6 +1,21 @@
-fieldset {
+.grouping {
     width: 50%;
     margin: auto;
+    border: #79954B 5px solid;
+    border-radius: 25px;
+    margin-bottom: 1%;
+    padding-top: 1%;
+}
+
+legend {
+    font-size: 24px;
+}
+
+input {
+    margin-bottom: 1%;
+}
+select {
+    margin-bottom: 1%;
 }
 
 h1 {
@@ -9,4 +24,28 @@ h1 {
 
 .columns {
     display: flex;
+}
+
+.logo {
+    width: 2.5%;
+}
+
+.page {
+    background-color: #333437;
+    color: #ffffff;
+    box-sizing: content-box;
+    font-family: sans-serif;
+}
+
+.header {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 30px;
+    color: #000000;
+    background-color: #DCB82E;
+    width: 100%;
+    padding: 15px 0 15px 25px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }

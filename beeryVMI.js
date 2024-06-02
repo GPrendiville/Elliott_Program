@@ -24,7 +24,7 @@ function motorCoordToString(motorcoord) {
 
 export function beeryOnLoad() {
 
-    document.querySelectorAll(".motorcoord").forEach(element => element.innerText =  ordinal(sessionStorage.getItem("motorcoord")));
-    document.querySelectorAll(".motorCoordString").forEach(element => element.innerText = motorCoordToString(sessionStorage.getItem("motorcoord")));
+    document.querySelectorAll(".motorcoord").forEach(element => element.textContent =  ordinal(sessionStorage.getItem("motorcoord")));
+    document.querySelectorAll(".motorCoordString").forEach(element => element.textContent = motorCoordToString(sessionStorage.getItem("motorcoord")));
 
 }
