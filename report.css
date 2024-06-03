@@ -8,7 +8,6 @@ html {
     color: rgb(0, 0, 0);
     line-height: 1.6em;
     margin: 0;
-    /* word-wrap: break-word; */
     word-wrap: normal;
     max-width: 550px;
     font-size: 12px;
@@ -20,7 +19,7 @@ html {
 
 .header {
     box-sizing: border-box;
-    text-align: left;
+    text-align: center;
     font-family: sans-serif;
     font-size: 30px;
     color: #000000;
@@ -74,7 +73,7 @@ li {
 }
 
 .accordion:after {
-    content: '\25BC'; /* Unicode character for "plus" sign (+) */
+    content: '\25BC';
     font-size: 24px;
     vertical-align: middle;
     color: #ffffff;
@@ -83,7 +82,7 @@ li {
   }
   
 .active:after {
-    content: "\25B2"; /* Unicode character for "minus" sign (-) */
+    content: "\25B2";
     color: #ffffff;
 }
 
@@ -110,7 +109,7 @@ li {
 
 .download:hover{
     box-shadow: 0 0 0px 2px #ffffff;
-  }
+}
 
 #inputs {
     width: 45%;
@@ -137,18 +136,9 @@ h3 {
     width: 600px;
 }
 
-/* span {
-    display: inline-table;
-    text-align: inherit;
-} */
-
 p {
     display: inline-flexbox;
 }
-
-/* .paragraphs {
-    display: inline-table;
-} */
 
 .trialscore {
     font-weight: bold;

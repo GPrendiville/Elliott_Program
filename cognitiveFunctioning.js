@@ -1,5 +1,9 @@
 
 function totalScoreString(totalscore) {
+    if((totalscore < 0) || (totalscore > 30)) {
+        return "ERROR";
+    }
+
     switch(!isNaN(totalscore)) {
         case totalscore < 10:
             return "severe cognitive impairment";
@@ -14,15 +18,16 @@ function totalScoreString(totalscore) {
 
 function subsetScoreToString(score) {
     switch(!isNaN(score)) {
-        // -1?
         case score === "0":
             return "severe impairment";
         case score === "1":
             return "moderate impairment";
         case score === "2":
             return "mild impairment";
-        default:
+        case score === "3":
             return "no impairment";
+        default:
+            return "ERROR";
     }
 }
 

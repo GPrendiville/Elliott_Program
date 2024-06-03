@@ -1,5 +1,5 @@
 .grouping {
-    width: 33%;
+    width: 25%;
     margin: auto;
     border: #79954B 5px solid;
     border-radius: 25px;
@@ -12,6 +12,34 @@ legend {
 
 .row {
     display: flex;
+}
+
+#age {
+    width: 2em;
+    padding-left: .25em;
+    padding-right: .25em;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+#topdf {
+    cursor: pointer;
+    font-size: 25px;
+    background-color: #333437;
+    border: none;
+}
+
+.enter {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.enter:hover{
+    box-shadow: 0 0 0px 2px #ffffff;
 }
 
 .pair {
@@ -39,6 +67,7 @@ input {
     color: #ffffff;
     box-sizing: content-box;
     font-family: sans-serif;
+    padding-bottom: 50px;
 }
 
 .header {

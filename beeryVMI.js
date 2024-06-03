@@ -2,6 +2,10 @@
 import { ordinal } from "./textConfirm.js";
 
 function motorCoordToString(motorcoord) {
+    if((motorcoord < 1) || (motorcoord > 99)) {
+        return "ERROR"
+    }
+
     switch(!isNaN(motorcoord)) {
         case motorcoord < 5:
             return "very poor performance";

@@ -101,7 +101,7 @@
         <fieldset class="grouping">
             <legend>Cognitive Functioning</legend>
             <div class="pair">
-                <label for="totalscore">Total Score</label>
+                <label for="totalscore">Total Score</label><br>
                 <input type="text" inputmode="numeric" id="totalscore" name="totalscore"><br>
             </div>
 
@@ -251,18 +251,14 @@
                 <label for="deviations">Standard Deviations off Mean</label><br>
                 <select id="sdmt">
                     <option value="-1">-</option>
-                    <option value="0">3.0 to 2.5</option>
-                    <option value="1">2.5 to 2.0</option>
-                    <option value="2">2.0 to 1.5</option>
-                    <option value="3">1.5 to 1.0</option>
-                    <option value="4">1.0 to 0.5</option>
-                    <option value="5">0.5 to 0</option>
-                    <option value="6">0 to -0.5</option>
-                    <option value="7">-0.5 to -1.0</option>
-                    <option value="8">-1.0 to -1.5</option>
-                    <option value="9">-1.5 to -2.0</option>
-                    <option value="10">-2.0 to -2.5</option>
-                    <option value="11">-2.5 to -3.0</option>
+                    <option value="0">2.0 to 3.0</option>
+                    <option value="1">1.0 to 2.0</option>
+                    <option value="2">0.5 to 1.0</option>
+                    <option value="3">0.0 to 0.5</option>
+                    <option value="4">-0.5 to 0.0</option>
+                    <option value="5">-1.0 to -0.5</option>
+                    <option value="6">-2.0 to -1.0</option>
+                    <option value="7">-3.0 to -2.0</option>
                 </select>
             </div>
 
@@ -316,19 +312,10 @@
 
         </fieldset>
 
-        <fieldset class="grouping">
-            <legend>Diagnoses</legend>
-            <input type="checkbox" id="depression" name="diagnoses" value="Depression">
-            <label for="depression">Depression</label><br>
-            <input type="checkbox" id="physpain" name="diagnoses" value="Pain">
-            <label for="physpain">Physical Pain</label><br>
-            <input type="checkbox" id="anxiety" name="diagnoses" value="Anxiety">
-            <label for="anxiety">Anxiety</label><br>
-            <input type="checkbox" id="pts" name="diagnoses" value="Post-Traumatic Stress">
-            <label for="pts">Post-Traumatic Stress</label><br>
-        </fieldset>
+        <div class="btn">
+            <button id="topdf" onclick="toPDF()"> <img class="enter" src="toPDF.png" alt=""> </button>
+        </div>
 
-        <button id="topdf" onclick="toPDF()">Submit</button>
 
         <script type="text/javascript" src="./userInput.js"></script>
     </form>
