@@ -49,6 +49,7 @@ html {
     background-color: #6b7c35;
 }
 
+
 ul {
     list-style-type: none;
 }
@@ -99,6 +100,7 @@ li {
     font-size: 25px;
     background-color: #333437;
     border: none;
+    margin-top: 100px;
 }
 
 .download {
@@ -137,7 +139,11 @@ h3 {
 }
 
 p {
-    display: inline-flexbox;
+    display: inline-table;
+}
+
+span {
+    display: inline-flex;
 }
 
 .trialscore {
