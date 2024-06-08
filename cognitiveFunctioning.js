@@ -1,6 +1,6 @@
 
 function totalScoreString(totalscore) {
-    if((totalscore < 0) || (totalscore > 30)) {
+    if((totalscore < 0) || (totalscore > 99)) {
         return "ERROR";
     }
 
