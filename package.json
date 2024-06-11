@@ -1,17 +1,22 @@
 {
   "name": "neuro-report-gen",
   "description": "Neuropsychological Report Generator",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "author": { "name": "Griffith Prendiville" },
   "build": {
     "appId": "com.electron.nrg",
     "productName": "Neuro Report Generator",
+    "directories": {
+      "buildResources": "build"
+    },
     "mac": {
+      "icon": "build/logo_512x512.png",
       "category": "public.app-categroy.medical",
       "target": "dmg",
       "publish": [ "github" ]
     },
     "win": {
+      "icon": "build/logo_512x512.png",
       "target": "nsis",
       "publish": [ "github" ]
     }
